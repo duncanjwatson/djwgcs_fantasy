@@ -1,0 +1,239 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "cfea334d-1e87-4c02-8b24-0a2489b4954f",
+	"traits": [
+		{
+			"id": "c5be870d-ad68-47a8-bcac-cde53a24ffe9",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "765f329c-284f-40e0-b02c-07544d5bc5a3",
+					"type": "trait",
+					"name": "Decreased Size Modifier",
+					"tags": [
+						"Physical"
+					],
+					"levels": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sm",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "ba7d4bf2-5a8c-4769-aa9c-bf1018cf571b",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c6ab610b-d155-45b4-8632-6a37ba710349",
+							"type": "trait",
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Disadvantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 5,
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": -50
+							}
+						},
+						{
+							"id": "c59a7a5c-39e6-42e5-8ed4-d0f384d71906",
+							"type": "trait",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "7ac39526-aa56-4d1a-ad47-90484fb1cb76",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "c299d67d-d4b5-49d5-912e-7821d64f389e",
+							"type": "trait",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "01c1a911-0021-4bab-8e83-9602d1bda43c",
+							"type": "trait",
+							"name": "Increased Will",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "will",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "5763d919-eda0-4c42-951e-ec8629c253d3",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "8e0f3fc3-3e6c-4351-a13d-9cdf799663d3",
+							"type": "trait",
+							"name": "Prefers to live underground",
+							"tags": [
+								"Mental"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "15a77b55-8a5b-4d6e-bc36-d81cbb61d684",
+							"type": "trait",
+							"name": "Overweight (ST+1 vs knockback)",
+							"reference": "B19",
+							"tags": [
+								"Physical"
+							],
+							"base_points": -1,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "disguise"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "shadowing"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "swimming"
+									},
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "2ffa9635-76e1-4f30-b10c-58c981a7d873",
+							"type": "trait",
+							"name": "Fond of Food and drink",
+							"tags": [
+								"Mental"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"name": "Racial Disadvantage",
+					"calc": {
+						"points": -3
+					}
+				}
+			],
+			"name": "Halfling",
+			"reference": "F109",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": -3
+			}
+		}
+	]
+}

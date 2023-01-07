@@ -9,60 +9,145 @@
 			"open": true,
 			"children": [
 				{
-					"id": "00bb088e-4e51-48bc-9862-072a452a3f65",
-					"type": "trait",
-					"name": "Attribute Modifiers (ST-2; DX+1; IQ+1)",
-					"tags": [
-						"Physical"
-					],
-					"base_points": 20,
-					"features": [
+					"id": "7900636e-fb9e-41f6-864d-10d38a697348",
+					"type": "trait_container",
+					"open": true,
+					"children": [
 						{
-							"type": "attribute_bonus",
-							"attribute": "st",
-							"amount": -2
+							"id": "3acd8d34-b7f3-4978-b173-0240975e66ac",
+							"type": "trait",
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": -20
+							}
 						},
 						{
-							"type": "attribute_bonus",
-							"attribute": "dx",
-							"amount": 1
+							"id": "42445916-b24c-48cc-bb1e-99953ba326bf",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage"
+							],
+							"levels": 1,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
 						},
 						{
-							"type": "attribute_bonus",
-							"attribute": "iq",
-							"amount": 1
+							"id": "e78f6b10-4299-4ee7-9001-077cb4ef8acb",
+							"type": "trait",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "7ac39526-aa56-4d1a-ad47-90484fb1cb76",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
 						}
 					],
+					"name": "Attributes",
 					"calc": {
 						"points": 20
 					}
 				},
 				{
-					"id": "9b83649e-8a38-49b2-8b7e-16369e4c7f72",
-					"type": "trait",
-					"name": "Impulsiveness (CR: 12)",
-					"reference": "B139",
-					"tags": [
-						"Mental"
+					"id": "01212e79-1cad-4070-8aba-241fd09c2988",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "7ad69345-706b-4e4d-ac3a-13b9377cebfc",
+							"type": "trait",
+							"name": "Night Vision",
+							"reference": "B71",
+							"tags": [
+								"Physical"
+							],
+							"levels": 5,
+							"points_per_level": 1,
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						}
 					],
-					"base_points": -10,
+					"name": "Racial Advantage",
 					"calc": {
-						"points": -10
+						"points": 5
 					}
 				},
 				{
-					"id": "7ad69345-706b-4e4d-ac3a-13b9377cebfc",
-					"type": "trait",
-					"name": "Night Vision",
-					"reference": "B71",
-					"tags": [
-						"Physical"
+					"id": "79e3e722-cc43-4a69-b896-f8daf53dc528",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "9b83649e-8a38-49b2-8b7e-16369e4c7f72",
+							"type": "trait",
+							"name": "Impulsiveness (CR: 12)",
+							"reference": "B139",
+							"tags": [
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						}
 					],
-					"levels": 9,
-					"points_per_level": 1,
-					"can_level": true,
+					"name": "Racial Disadvantage",
 					"calc": {
-						"points": 9
+						"points": -10
 					}
 				}
 			],
@@ -71,7 +156,7 @@
 			"ancestry": "Human",
 			"container_type": "race",
 			"calc": {
-				"points": 19
+				"points": 15
 			}
 		}
 	],
