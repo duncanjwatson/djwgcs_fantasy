@@ -2358,6 +2358,20 @@
 			}
 		},
 		{
+			"id": "c8c04538-7921-410c-b5b6-43799645add3",
+			"type": "trait",
+			"name": "Code of Honor (Highwayman's)",
+			"reference": "F132",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
 			"id": "4334f76e-8ed1-4f1a-b9bb-0a626acb5b7a",
 			"type": "trait",
 			"name": "Code of Honor (Pirate's)",
