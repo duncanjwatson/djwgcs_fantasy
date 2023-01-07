@@ -1,0 +1,838 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "ec9364d4-792e-487b-83cf-92dfebbd49bd",
+	"traits": [
+		{
+			"id": "52b08373-a119-43c9-a3a9-edddf007ea3b",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "1d1cbf2d-979d-461c-915a-c7410a5d11e3",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e5216db8-5203-4d13-85be-0f4c58e9fdc2",
+							"type": "trait",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "b06fc4e8-3029-4b07-af5f-638d60085a67",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 3,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 60
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 70
+					}
+				},
+				{
+					"id": "ece4d1b5-8b49-4c7b-9393-81543c344017",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "d48c322e-4a4b-4c39-a845-5e522b78aa1f",
+							"type": "trait",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "210be296-15f5-4201-9eb9-a392230ee196",
+									"type": "modifier",
+									"name": "Dance",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "70219f24-3d7e-4cd9-927d-5e438d7211eb",
+									"type": "modifier",
+									"name": "Dark-Aspected",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "920f6af6-746f-4614-87e0-9a4b365bd8d1",
+									"type": "modifier",
+									"name": "Day-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "98de5394-bd90-462d-93b6-50f2ec4d555d",
+									"type": "modifier",
+									"name": "Musical",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "0223c9b0-e59f-461c-98ab-7fba6266e556",
+									"type": "modifier",
+									"name": "Night-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "17b6a7e1-14f0-4856-af1c-e7ea378f1cc9",
+									"type": "modifier",
+									"name": "One College",
+									"notes": "@College@",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "f8218d81-805a-44de-8cf6-52691c2d0229",
+									"type": "modifier",
+									"name": "Solitary",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "dd12e9c0-ed27-4cdb-b700-1d93ba16c3ef",
+									"type": "modifier",
+									"name": "Song",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"levels": 4,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 45
+							}
+						},
+						{
+							"id": "2007679d-9602-4767-a53e-596be6778816",
+							"type": "trait",
+							"name": "Status",
+							"reference": "B28",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"base_points": -5,
+							"levels": 1,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"name": "Class Advantage",
+					"calc": {
+						"points": 45
+					}
+				},
+				{
+					"id": "fdfbcb6f-60cc-4c82-9c39-edb16ff2cac2",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "265871db-762d-4baa-a4eb-d84e7667aa54",
+							"type": "trait",
+							"name": "Limited use of Healing Magic",
+							"notes": "Classic Wizards can't learn healing magic. (can't learn healing spells outside lend energy, recover energy unless it is a requirement for something else)",
+							"tags": [
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"name": "Class Disadvantage",
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"name": "Wizard",
+			"calc": {
+				"points": 110
+			}
+		},
+		{
+			"id": "83105f14-c7bf-429e-9b0e-8292042c5dbd",
+			"type": "trait",
+			"name": "Language: @Language@",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"modifiers": [
+				{
+					"id": "a753e97e-2332-49e9-9ca4-ad8b6ecffb34",
+					"type": "modifier",
+					"name": "Native",
+					"reference": "B23",
+					"cost": -6,
+					"cost_type": "points"
+				},
+				{
+					"id": "15b6e3f4-66ca-4b42-8d3b-cf8e07c809fc",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "None",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ad4e3de5-f03f-4590-9c38-453b19b15ca0",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "Broken",
+					"cost": 1,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "fbf5022a-a346-47a6-90be-42ee45f978b6",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "Accented",
+					"cost": 2,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "453a8960-61ef-46af-88d5-bc451667d54e",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 3,
+					"cost_type": "points"
+				},
+				{
+					"id": "56dfe3db-4ad6-4093-85ce-ceee2366e3b7",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "None",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ac584f6a-7751-4a22-a7df-659b65c7aab6",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "Broken",
+					"cost": 1,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "667d29b5-57c0-4537-97fb-ac577662f3a4",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "Accented",
+					"cost": 2,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "1c5dc6c8-edc6-4617-987d-0df6b96b1204",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 3,
+					"cost_type": "points"
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "2dbe708f-aa32-4a5b-b407-9f661d77a8ab",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "5332ed31-45f7-437f-8848-ea03adfe2bb9",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "b519f6bd-2758-4bfd-a5bf-5188d4fb917f",
+							"type": "skill",
+							"name": "Thaumatology",
+							"reference": "B225",
+							"tags": [
+								"Magical",
+								"Occult"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -7
+								}
+							]
+						}
+					],
+					"name": "1. Primary Skill"
+				},
+				{
+					"id": "76034b14-4b21-4191-9368-e4ec43cf7561",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "2b606cfe-111f-4b7b-98a9-c331b0d84769",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "bfc47479-814c-413a-aef4-9cfb593323f2",
+									"type": "skill",
+									"name": "Innate Attack",
+									"reference": "B201",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"specialization": "Beam",
+									"difficulty": "dx/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										}
+									]
+								},
+								{
+									"id": "d8d7907f-04b0-4d60-b0f3-4aa028da0991",
+									"type": "skill",
+									"name": "Innate Attack",
+									"reference": "B201",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"specialization": "Projectile",
+									"difficulty": "dx/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										}
+									]
+								},
+								{
+									"id": "f5cf7d31-5dc3-4cf3-8cf8-f84c6fd12a18",
+									"type": "skill",
+									"name": "Staff",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"name": "One of:"
+						},
+						{
+							"id": "d900422e-ac78-4e05-b43f-23741b801356",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "9175daa8-50c6-40b3-8b87-8c3d06848311",
+									"type": "skill",
+									"name": "Hiking",
+									"reference": "B200",
+									"tags": [
+										"Athletic",
+										"Exploration",
+										"Outdoor"
+									],
+									"difficulty": "ht/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "f7754ab5-d1b5-474d-a3a9-05ac27760c3f",
+									"type": "skill",
+									"name": "Riding",
+									"reference": "B217",
+									"tags": [
+										"Animal"
+									],
+									"difficulty": "dx/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Animal Handling",
+											"modifier": -3
+										}
+									]
+								}
+							],
+							"name": "One of:"
+						}
+					],
+					"name": "2. Secondary Skill"
+				},
+				{
+					"id": "9c2084e0-9fb7-4e84-9220-6b7260e4a1d5",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "0bc3f08a-0e4f-4dc8-b6d1-c6723bfac96c",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "dcdd2d4e-67cf-4a27-95e5-5023c9b37a23",
+									"type": "skill",
+									"name": "Occultism",
+									"reference": "B212",
+									"tags": [
+										"Magical",
+										"Occult"
+									],
+									"difficulty": "iq/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "6c2a3f26-efd2-405f-8476-ca00f6979df3",
+									"type": "skill",
+									"name": "Research",
+									"reference": "B217",
+									"tags": [
+										"Scholarly",
+										"Spy"
+									],
+									"tech_level": "",
+									"difficulty": "iq/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Writing",
+											"modifier": -3
+										}
+									],
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "prereq_list",
+												"all": true,
+												"when_tl": {
+													"compare": "at_least",
+													"qualifier": 8
+												},
+												"prereqs": [
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Computer Operation"
+														}
+													}
+												]
+											},
+											{
+												"type": "prereq_list",
+												"all": false,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Native"
+														}
+													},
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Accented)"
+														}
+													},
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Broken)"
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"id": "b2cc7902-cede-49e6-b0ae-4fdbbe41ad77",
+									"type": "skill",
+									"name": "Naturalist",
+									"reference": "B211",
+									"tags": [
+										"Animal",
+										"Exploration",
+										"Natural Science",
+										"Outdoor",
+										"Plant"
+									],
+									"difficulty": "iq/h",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Biology",
+											"modifier": -3
+										}
+									]
+								},
+								{
+									"id": "dcc945ae-9b3e-4726-b576-798a087c9d2c",
+									"type": "skill",
+									"name": "Theology",
+									"reference": "B226",
+									"tags": [
+										"Humanities",
+										"Social Sciences"
+									],
+									"difficulty": "iq/h",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Religious Ritual",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"name": "One of:"
+						}
+					],
+					"name": "3. Background Skill"
+				}
+			],
+			"name": "Wizard"
+		}
+	],
+	"spells": [
+		{
+			"id": "9af58af7-3ec1-4172-8184-386a9d99f7e9",
+			"type": "spell",
+			"name": "Lend Energy",
+			"reference": "M89",
+			"tags": [
+				"Healing"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Healing"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1/pt",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Permanent",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (healing)"
+								}
+							}
+						]
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "empathy"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "e1225c06-27e5-4379-a8cd-e1607ffc3602",
+			"type": "spell",
+			"name": "Recover Energy",
+			"reference": "M89",
+			"tags": [
+				"Healing"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Healing"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Special",
+			"casting_cost": "0",
+			"maintenance_cost": "0",
+			"casting_time": "1 sec",
+			"duration": "Special",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (healing)"
+								}
+							}
+						]
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "lend energy"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			}
+		}
+	]
+}
