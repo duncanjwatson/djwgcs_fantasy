@@ -11,6 +11,7 @@
 				{
 					"id": "2426cadd-8775-4e3d-a93b-594ddea7b933",
 					"type": "trait_container",
+					"open": true,
 					"children": [
 						{
 							"id": "2407b06e-f214-45ae-890c-fef5efaa2a86",
@@ -37,7 +38,7 @@
 								"points": 10
 							}
 						},
-                        {
+						{
 							"id": "2407b06e-f214-45ae-830c-fef5efaa2a86",
 							"type": "trait",
 							"name": "Increased Strength",
@@ -111,12 +112,13 @@
 					],
 					"name": "Attributes",
 					"calc": {
-						"points": 15
+						"points": 35
 					}
 				},
 				{
 					"id": "5dc16932-87dd-4d8a-a8c0-0f6d29eab7e7",
 					"type": "trait_container",
+					"open": true,
 					"children": [
 						{
 							"id": "2dc08e68-4fd3-4e67-9e85-792731e37552",
@@ -285,12 +287,13 @@
 					],
 					"name": "Racial Advantage",
 					"calc": {
-						"points": 27
+						"points": 17
 					}
 				},
 				{
 					"id": "f1217d4c-c0a8-4cbc-9c10-eaab10fbe83c",
 					"type": "trait_container",
+					"open": true,
 					"children": [
 						{
 							"id": "19d7ab4f-68a4-441e-8c26-481a41a0c83c",
@@ -319,7 +322,7 @@
 			"ancestry": "Human",
 			"container_type": "race",
 			"calc": {
-				"points": 35
+				"points": 45
 			}
 		}
 	]
