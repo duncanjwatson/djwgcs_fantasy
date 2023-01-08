@@ -423,7 +423,8 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 0,
+							"underside": 1
 						}
 					}
 				},
@@ -942,7 +943,7 @@
 					],
 					"calc": {
 						"level": 16,
-						"parry": "12",
+						"parry": "14",
 						"block": "No",
 						"damage": "1d+1 cr"
 					}
@@ -1084,7 +1085,7 @@
 					],
 					"calc": {
 						"level": 16,
-						"parry": "12",
+						"parry": "14",
 						"damage": "1d cr"
 					}
 				},
@@ -2274,6 +2275,70 @@
 			}
 		}
 	],
+	"equipment": [
+		{
+			"id": "c468abf2-f1ee-4d9c-abf0-7b34cca15c8c",
+			"type": "equipment",
+			"description": "Sandals",
+			"reference": "B284",
+			"notes": "Concealable",
+			"tech_level": "0",
+			"tags": [
+				"Footwear"
+			],
+			"quantity": 1,
+			"value": 25,
+			"weight": "0.5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "foot",
+					"specialization": "underside",
+					"amount": 1
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 25,
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "a0fb7521-de4b-4085-83fa-37a4b43d3151",
+			"type": "equipment",
+			"description": "Enchanted Gi (clothes)",
+			"reference": "LT98",
+			"tech_level": "0",
+			"tags": [
+				"Clothing"
+			],
+			"quantity": 1,
+			"value": 900,
+			"weight": "2 lb",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "block",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "parry",
+					"amount": 2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 900,
+				"extended_weight": "2 lb"
+			}
+		}
+	],
 	"notes": [
 		{
 			"id": "5cf25677-7f5d-4290-b405-1e709506e911",
@@ -2287,14 +2352,14 @@
 		}
 	],
 	"created_date": "2023-01-08T10:31:48-08:00",
-	"modified_date": "2023-01-08T12:20:09-08:00",
+	"modified_date": "2023-01-08T14:39:42-08:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
 		"basic_lift": "29 lb",
-		"dodge_bonus": 1,
-		"parry_bonus": 1,
-		"block_bonus": 1,
+		"dodge_bonus": 3,
+		"parry_bonus": 3,
+		"block_bonus": 3,
 		"move": [
 			7,
 			5,
@@ -2303,11 +2368,11 @@
 			1
 		],
 		"dodge": [
+			13,
+			12,
 			11,
 			10,
-			9,
-			8,
-			7
+			9
 		]
 	}
 }
