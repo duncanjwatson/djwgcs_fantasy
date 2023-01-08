@@ -13,6 +13,7 @@
 	"profile": {
 		"player_name": "Duncan Watson",
 		"name": "Lark",
+		"title": "Bard and Knife Weapon Master",
 		"age": "24",
 		"birthday": "Feburary 2",
 		"eyes": "Brown",
@@ -3222,7 +3223,7 @@
 		}
 	],
 	"created_date": "2023-01-08T07:47:23-08:00",
-	"modified_date": "2023-01-08T10:06:01-08:00",
+	"modified_date": "2023-01-08T12:23:28-08:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

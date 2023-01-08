@@ -13,6 +13,7 @@
 	"profile": {
 		"player_name": "Duncan Watson",
 		"name": "Kalkin Buchanan",
+		"title": "Mage ",
 		"religion": "Mystra",
 		"age": "25",
 		"birthday": "March 28",
@@ -4670,7 +4671,7 @@
 		}
 	],
 	"created_date": "2023-01-05T18:50:48-08:00",
-	"modified_date": "2023-01-08T08:19:10-08:00",
+	"modified_date": "2023-01-08T12:22:18-08:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
