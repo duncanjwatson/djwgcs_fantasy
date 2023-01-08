@@ -1,0 +1,105 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "ab907418-e803-4eb1-96d4-8c95ae98d7d0",
+	"traits": [
+		{
+			"id": "1d93184a-61b8-49ca-a515-4564de3efac5",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "1c993b8a-f0c0-45e0-aa5f-704ea4eb0a1d",
+					"type": "trait",
+					"name": "Decreased Strength",
+					"reference": "B14",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "2ed46c5e-577f-4cb1-b01d-0da81375ed78",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "7ac39526-aa56-4d1a-ad47-90484fb1cb76",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				}
+			],
+			"name": "Attributes",
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "ba1012a5-191a-4f19-a8e7-2220bc170e5e",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "200b3618-c651-47ab-a904-f19685ce450e",
+					"type": "trait",
+					"name": "Extended Lifespan",
+					"reference": "B53",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"name": "Racial Advantages",
+			"calc": {
+				"points": 1
+			}
+		}
+	]
+}

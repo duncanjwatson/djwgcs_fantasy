@@ -1280,522 +1280,115 @@
 	],
 	"skills": [
 		{
-			"id": "10c26ed8-40a0-4074-a1d2-d2b0c1a425c6",
+			"id": "f9dd7aff-5ce4-4a82-bbde-b27cbd91f3d8",
 			"type": "skill",
-			"name": "Detect Lies",
-			"reference": "B187",
+			"name": "Thrown Weapon",
+			"reference": "B226",
 			"tags": [
-				"Police",
-				"Social",
-				"Spy"
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
 			],
-			"difficulty": "per/h",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -6,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Body Language",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Psychology",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 10,
-				"rsl": "Per-2"
-			}
-		},
-		{
-			"id": "354ef46b-da7f-4215-bd7d-0d477feae3e9",
-			"type": "skill",
-			"name": "Interrogation",
-			"reference": "B202",
-			"tags": [
-				"Military",
-				"Police",
-				"Spy"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Intimidation",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Psychology",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "f0665754-aab8-428a-ab8b-403bbf87f062",
-			"type": "skill",
-			"name": "Streetwise",
-			"reference": "B223",
-			"tags": [
-				"Criminal",
-				"Police",
-				"Social",
-				"Street"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "05334655-9656-4f3f-995c-0a598bc8f99c",
-			"type": "skill",
-			"name": "Search",
-			"reference": "B219",
-			"tags": [
-				"Police",
-				"Spy"
-			],
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Criminology",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "a5f01cae-433c-4e00-813a-ec53b0d0fd21",
-			"type": "skill",
-			"name": "Fast-Talk",
-			"reference": "B195",
-			"tags": [
-				"Criminal",
-				"Social",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Acting",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "efcaeaee-f323-4eff-98b0-1eda592dd23e",
-			"type": "skill",
-			"name": "Observation",
-			"reference": "B211",
-			"tags": [
-				"Criminal",
-				"Military",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Shadowing",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "fa0b786f-acfc-4a82-a1b4-ae7a7272e2f8",
-			"type": "skill",
-			"name": "Armoury",
-			"reference": "B178",
-			"tags": [
-				"Maintenance",
-				"Military",
-				"Repair"
-			],
-			"specialization": "Melee Weapons",
-			"tech_level": "3",
-			"difficulty": "iq/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Engineer",
-					"specialization": "Melee Weapons",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "1d956840-175e-4549-b4f4-0595df2ab74d",
-			"type": "skill",
-			"name": "Hiking",
-			"reference": "B200",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "773645fd-46df-4cbb-81a1-d748c4ef34b7",
-			"type": "skill",
-			"name": "Gesture",
-			"reference": "B198",
-			"tags": [
-				"Social"
-			],
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "4cc13502-62b4-4389-90f9-e52f25989f34",
-			"type": "skill",
-			"name": "Scrounging",
-			"reference": "B218",
-			"tags": [
-				"Criminal",
-				"Street"
-			],
-			"difficulty": "per/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "Per+0"
-			}
-		},
-		{
-			"id": "d345e285-8ab9-41ad-bd6b-43ddf78c6583",
-			"type": "skill",
-			"name": "Savoir-Faire",
-			"reference": "B218,MA59",
-			"tags": [
-				"Knowledge",
-				"Social"
-			],
-			"specialization": "High Society",
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Games",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "349970cc-9416-4002-b161-9a5c46d13389",
-			"type": "skill",
-			"name": "Musical Instrument",
-			"reference": "B211",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Lute",
-			"difficulty": "iq/h",
+			"specialization": "Knife",
+			"difficulty": "dx/e",
 			"points": 8,
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "a1d95cb8-6faa-4cfb-93c9-4783204d8236",
-			"type": "skill",
-			"name": "Holdout",
-			"reference": "B200",
-			"tags": [
-				"Criminal",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "iq/a",
-			"points": 4,
 			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Sleight of Hand",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "b23c49e2-9e75-4d49-ac0b-a16786453ae7",
-			"type": "skill",
-			"name": "Lockpicking",
-			"reference": "B206",
-			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street",
-				"Technical"
-			],
-			"tech_level": "3",
-			"difficulty": "iq/a",
-			"points": 4,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "2b4f063b-c8cd-4b1e-9225-4cee2d4e4b4c",
-			"type": "skill",
-			"name": "First Aid",
-			"reference": "B195",
-			"tags": [
-				"Everyman",
-				"Medical"
-			],
-			"tech_level": "3",
-			"difficulty": "iq/e",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
+				"type": "dx",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
 			"defaults": [
 				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Esoteric Medicine"
-				},
-				{
-					"type": "skill",
-					"name": "Physician"
-				},
-				{
-					"type": "skill",
-					"name": "Veterinary",
+					"type": "dx",
 					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 13,
-				"rsl": "IQ+1"
+				"level": 18,
+				"rsl": "DX+3"
 			}
 		},
 		{
-			"id": "cfe22bce-26c9-40f6-a576-8692de5673bd",
+			"id": "742b9f48-d8ab-436d-b153-c8a60f14630d",
 			"type": "skill",
-			"name": "Pickpocket",
-			"reference": "B213",
+			"name": "Knife",
+			"reference": "B208",
 			"tags": [
-				"Criminal",
-				"Street"
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"points": 8,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 18,
+				"rsl": "DX+3"
+			}
+		},
+		{
+			"id": "a3fb38ac-71eb-475e-a42c-ec9413565300",
+			"type": "technique",
+			"name": "Dual-Weapon Attack",
+			"reference": "B230,MA83",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"points": 8,
+			"default": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -4
+			},
+			"limit": 0,
+			"calc": {
+				"level": 18,
+				"rsl": "+0"
+			}
+		},
+		{
+			"id": "3d9e5a44-81d6-4c75-a7b9-23ed252ffaa3",
+			"type": "skill",
+			"name": "Acrobatics",
+			"reference": "B174,MA54",
+			"tags": [
+				"Athletic"
 			],
 			"difficulty": "dx/h",
-			"points": 1,
+			"points": 8,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -6,
@@ -1810,18 +1403,170 @@
 				},
 				{
 					"type": "skill",
-					"name": "Filch",
-					"modifier": -5
+					"name": "Aerobatics",
+					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": "Aquabatics",
 					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 13,
-				"rsl": "DX-2"
+				"level": 16,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "ec226a59-8675-4ef0-9176-dbbf49bc433b",
+			"type": "technique",
+			"name": "Reverse Grip",
+			"reference": "MA78",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"points": 4,
+			"default": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -6
+			},
+			"limit": 0,
+			"calc": {
+				"level": 16,
+				"rsl": "-2"
+			}
+		},
+		{
+			"id": "cf75e84d-a601-4eeb-9011-899ffe4f240c",
+			"type": "skill",
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Knife",
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 16,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "683971ac-5e9e-4138-92aa-f6d7430e4044",
+			"type": "skill",
+			"name": "Carousing",
+			"reference": "B183",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Street"
+			],
+			"difficulty": "ht/e",
+			"points": 4,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 15,
+				"rsl": "HT+2"
+			}
+		},
+		{
+			"id": "3d970036-58f3-4791-8cea-e2a24cb7b731",
+			"type": "skill",
+			"name": "Singing",
+			"reference": "B220",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"difficulty": "ht/e",
+			"points": 4,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 15,
+				"rsl": "HT+2"
+			}
+		},
+		{
+			"id": "e7df11a0-9a9b-4666-a68e-ad669427b3fc",
+			"type": "skill",
+			"name": "Forced Entry",
+			"reference": "B196",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 15,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "d0644b9b-030a-49d1-846f-13391a1206bb",
+			"type": "skill",
+			"name": "Brawling",
+			"reference": "B182,MA55",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"calc": {
+				"level": 15,
+				"rsl": "DX+0"
 			}
 		},
 		{
@@ -2067,125 +1812,144 @@
 			}
 		},
 		{
-			"id": "683971ac-5e9e-4138-92aa-f6d7430e4044",
+			"id": "349970cc-9416-4002-b161-9a5c46d13389",
 			"type": "skill",
-			"name": "Carousing",
-			"reference": "B183",
-			"tags": [
-				"Criminal",
-				"Social",
-				"Street"
-			],
-			"difficulty": "ht/e",
-			"points": 4,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 15,
-				"rsl": "HT+2"
-			}
-		},
-		{
-			"id": "3d970036-58f3-4791-8cea-e2a24cb7b731",
-			"type": "skill",
-			"name": "Singing",
-			"reference": "B220",
+			"name": "Musical Instrument",
+			"reference": "B211",
 			"tags": [
 				"Arts",
 				"Entertainment"
 			],
-			"difficulty": "ht/e",
+			"specialization": "Lute",
+			"difficulty": "iq/h",
+			"points": 8,
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "a1d95cb8-6faa-4cfb-93c9-4783204d8236",
+			"type": "skill",
+			"name": "Holdout",
+			"reference": "B200",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
 			"points": 4,
 			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"defaults": [
 				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 15,
-				"rsl": "HT+2"
-			}
-		},
-		{
-			"id": "d0644b9b-030a-49d1-846f-13391a1206bb",
-			"type": "skill",
-			"name": "Brawling",
-			"reference": "B182,MA55",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"difficulty": "dx/e",
-			"points": 1,
-			"features": [
+					"type": "iq",
+					"modifier": -5
+				},
 				{
-					"type": "weapon_bonus",
-					"selection_type": "weapons_with_required_skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Brawling"
-					},
-					"level": {
-						"compare": "at_least",
-						"qualifier": 2
-					},
-					"amount": 1,
-					"per_level": true
+					"type": "skill",
+					"name": "Sleight of Hand",
+					"modifier": -3
 				}
 			],
 			"calc": {
-				"level": 15,
-				"rsl": "DX+0"
+				"level": 13,
+				"rsl": "IQ+1"
 			}
 		},
 		{
-			"id": "e7df11a0-9a9b-4666-a68e-ad669427b3fc",
+			"id": "b23c49e2-9e75-4d49-ac0b-a16786453ae7",
 			"type": "skill",
-			"name": "Forced Entry",
-			"reference": "B196",
+			"name": "Lockpicking",
+			"reference": "B206",
 			"tags": [
 				"Criminal",
 				"Police",
 				"Spy",
-				"Street"
+				"Street",
+				"Technical"
 			],
-			"difficulty": "dx/e",
-			"points": 1,
+			"tech_level": "3",
+			"difficulty": "iq/a",
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
 			"calc": {
-				"level": 15,
-				"rsl": "DX+0"
+				"level": 13,
+				"rsl": "IQ+1"
 			}
 		},
 		{
-			"id": "3d9e5a44-81d6-4c75-a7b9-23ed252ffaa3",
+			"id": "2b4f063b-c8cd-4b1e-9225-4cee2d4e4b4c",
 			"type": "skill",
-			"name": "Acrobatics",
-			"reference": "B174,MA54",
+			"name": "First Aid",
+			"reference": "B195",
 			"tags": [
-				"Athletic"
+				"Everyman",
+				"Medical"
+			],
+			"tech_level": "3",
+			"difficulty": "iq/e",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "cfe22bce-26c9-40f6-a576-8692de5673bd",
+			"type": "skill",
+			"name": "Pickpocket",
+			"reference": "B213",
+			"tags": [
+				"Criminal",
+				"Street"
 			],
 			"difficulty": "dx/h",
-			"points": 8,
+			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -6,
@@ -2200,160 +1964,396 @@
 				},
 				{
 					"type": "skill",
-					"name": "Aerobatics",
-					"modifier": -4
+					"name": "Filch",
+					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Aquabatics",
+					"name": "Sleight of Hand",
 					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 16,
-				"rsl": "DX+1"
+				"level": 13,
+				"rsl": "DX-2"
 			}
 		},
 		{
-			"id": "ec226a59-8675-4ef0-9176-dbbf49bc433b",
-			"type": "technique",
-			"name": "Reverse Grip",
-			"reference": "MA78",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Technique",
-				"Weapon"
-			],
-			"difficulty": "a",
-			"points": 4,
-			"default": {
-				"type": "skill",
-				"name": "Knife",
-				"modifier": -6
-			},
-			"limit": 0,
-			"calc": {
-				"level": 16,
-				"rsl": "-2"
-			}
-		},
-		{
-			"id": "cf75e84d-a601-4eeb-9011-899ffe4f240c",
+			"id": "fa0b786f-acfc-4a82-a1b4-ae7a7272e2f8",
 			"type": "skill",
-			"name": "Fast-Draw",
-			"reference": "B194,MA56",
+			"name": "Armoury",
+			"reference": "B178",
 			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
+				"Maintenance",
+				"Military",
+				"Repair"
 			],
-			"specialization": "Knife",
-			"difficulty": "dx/e",
+			"specialization": "Melee Weapons",
+			"tech_level": "3",
+			"difficulty": "iq/a",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Melee Weapons",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "1d956840-175e-4549-b4f4-0595df2ab74d",
+			"type": "skill",
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/a",
 			"points": 1,
-			"calc": {
-				"level": 16,
-				"rsl": "DX+1"
-			}
-		},
-		{
-			"id": "a3fb38ac-71eb-475e-a42c-ec9413565300",
-			"type": "technique",
-			"name": "Dual-Weapon Attack",
-			"reference": "B230,MA83",
-			"tags": [
-				"Cinematic Techniques",
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"difficulty": "h",
-			"points": 8,
-			"default": {
-				"type": "skill",
-				"name": "Knife",
-				"modifier": -4
-			},
-			"limit": 0,
-			"calc": {
-				"level": 18,
-				"rsl": "+0"
-			}
-		},
-		{
-			"id": "742b9f48-d8ab-436d-b153-c8a60f14630d",
-			"type": "skill",
-			"name": "Knife",
-			"reference": "B208",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"difficulty": "dx/e",
-			"points": 8,
 			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"type": "ht",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"defaults": [
 				{
-					"type": "skill",
-					"name": "Force Sword",
-					"modifier": -3
-				},
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "4cc13502-62b4-4389-90f9-e52f25989f34",
+			"type": "skill",
+			"name": "Scrounging",
+			"reference": "B218",
+			"tags": [
+				"Criminal",
+				"Street"
+			],
+			"difficulty": "per/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
 				{
-					"type": "skill",
-					"name": "Main-Gauche",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Shortsword",
-					"modifier": -3
-				},
-				{
-					"type": "dx",
+					"type": "per",
 					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 18,
-				"rsl": "DX+3"
+				"level": 12,
+				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "f9dd7aff-5ce4-4a82-bbde-b27cbd91f3d8",
+			"id": "773645fd-46df-4cbb-81a1-d748c4ef34b7",
 			"type": "skill",
-			"name": "Thrown Weapon",
-			"reference": "B226",
+			"name": "Gesture",
+			"reference": "B198",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Social"
 			],
-			"specialization": "Knife",
-			"difficulty": "dx/e",
-			"points": 8,
+			"difficulty": "iq/e",
+			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
+				"type": "iq",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": -11
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"defaults": [
 				{
-					"type": "dx",
+					"type": "iq",
 					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 18,
-				"rsl": "DX+3"
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "d345e285-8ab9-41ad-bd6b-43ddf78c6583",
+			"type": "skill",
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "High Society",
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Games",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "efcaeaee-f323-4eff-98b0-1eda592dd23e",
+			"type": "skill",
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "a5f01cae-433c-4e00-813a-ec53b0d0fd21",
+			"type": "skill",
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "05334655-9656-4f3f-995c-0a598bc8f99c",
+			"type": "skill",
+			"name": "Search",
+			"reference": "B219",
+			"tags": [
+				"Police",
+				"Spy"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Criminology",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "f0665754-aab8-428a-ab8b-403bbf87f062",
+			"type": "skill",
+			"name": "Streetwise",
+			"reference": "B223",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Social",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "354ef46b-da7f-4215-bd7d-0d477feae3e9",
+			"type": "skill",
+			"name": "Interrogation",
+			"reference": "B202",
+			"tags": [
+				"Military",
+				"Police",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Intimidation",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "10c26ed8-40a0-4074-a1d2-d2b0c1a425c6",
+			"type": "skill",
+			"name": "Detect Lies",
+			"reference": "B187",
+			"tags": [
+				"Police",
+				"Social",
+				"Spy"
+			],
+			"difficulty": "per/h",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Body Language",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 10,
+				"rsl": "Per-2"
 			}
 		}
 	],
