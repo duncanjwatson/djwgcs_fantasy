@@ -1279,6 +1279,69 @@
 			}
 		},
 		{
+			"id": "04f0667d-5768-4bd6-9098-a3cec8ee2404",
+			"type": "skill",
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "High Society",
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Games",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "2504ba46-6dfa-41be-8f54-b6d6462e9bcb",
+			"type": "skill",
+			"name": "Gesture",
+			"reference": "B198",
+			"tags": [
+				"Social"
+			],
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "b2503ce8-2b37-4628-b11f-46125bcd3bb9",
 			"type": "skill",
 			"name": "First Aid",
@@ -1322,69 +1385,6 @@
 			}
 		},
 		{
-			"id": "2504ba46-6dfa-41be-8f54-b6d6462e9bcb",
-			"type": "skill",
-			"name": "Gesture",
-			"reference": "B198",
-			"tags": [
-				"Social"
-			],
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "04f0667d-5768-4bd6-9098-a3cec8ee2404",
-			"type": "skill",
-			"name": "Savoir-Faire",
-			"reference": "B218,MA59",
-			"tags": [
-				"Knowledge",
-				"Social"
-			],
-			"specialization": "High Society",
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Games",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+0"
-			}
-		},
-		{
 			"id": "3b6580f2-c7aa-44b8-95e5-e50f88c13055",
 			"type": "skill",
 			"name": "Body Sense",
@@ -1418,14 +1418,14 @@
 			}
 		},
 		{
-			"id": "a51d56c9-ff8f-4cfd-ae37-61a6f475e295",
+			"id": "0716c152-3de6-46e5-ac7b-c9c9916cade0",
 			"type": "skill",
-			"name": "Fast-Talk",
-			"reference": "B195",
+			"name": "Streetwise",
+			"reference": "B223",
 			"tags": [
 				"Criminal",
+				"Police",
 				"Social",
-				"Spy",
 				"Street"
 			],
 			"difficulty": "iq/a",
@@ -1440,11 +1440,6 @@
 			"defaults": [
 				{
 					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Acting",
 					"modifier": -5
 				}
 			],
@@ -1488,14 +1483,14 @@
 			}
 		},
 		{
-			"id": "0716c152-3de6-46e5-ac7b-c9c9916cade0",
+			"id": "a51d56c9-ff8f-4cfd-ae37-61a6f475e295",
 			"type": "skill",
-			"name": "Streetwise",
-			"reference": "B223",
+			"name": "Fast-Talk",
+			"reference": "B195",
 			"tags": [
 				"Criminal",
-				"Police",
 				"Social",
+				"Spy",
 				"Street"
 			],
 			"difficulty": "iq/a",
@@ -1511,6 +1506,11 @@
 				{
 					"type": "iq",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
 				}
 			],
 			"calc": {
@@ -1519,33 +1519,39 @@
 			}
 		},
 		{
-			"id": "25076d99-3ad8-4f0b-bc1f-a82996696065",
+			"id": "4d5d6a5c-8ad2-4ae0-84f9-e22a1ac389cf",
 			"type": "skill",
-			"name": "Hiking",
-			"reference": "B200",
+			"name": "Stealth",
+			"reference": "B222",
 			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
 			],
-			"difficulty": "ht/a",
+			"difficulty": "dx/a",
 			"points": 1,
+			"encumbrance_penalty_multiplier": 1,
 			"defaulted_from": {
-				"type": "ht",
+				"type": "iq",
 				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"defaults": [
 				{
-					"type": "ht",
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
 					"modifier": -5
 				}
 			],
 			"calc": {
 				"level": 11,
-				"rsl": "HT-1"
+				"rsl": "DX-1"
 			}
 		},
 		{
@@ -1584,39 +1590,33 @@
 			}
 		},
 		{
-			"id": "4d5d6a5c-8ad2-4ae0-84f9-e22a1ac389cf",
+			"id": "25076d99-3ad8-4f0b-bc1f-a82996696065",
 			"type": "skill",
-			"name": "Stealth",
-			"reference": "B222",
+			"name": "Hiking",
+			"reference": "B200",
 			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street"
+				"Athletic",
+				"Exploration",
+				"Outdoor"
 			],
-			"difficulty": "dx/a",
+			"difficulty": "ht/a",
 			"points": 1,
-			"encumbrance_penalty_multiplier": 1,
 			"defaulted_from": {
-				"type": "iq",
+				"type": "ht",
 				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"defaults": [
 				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "dx",
+					"type": "ht",
 					"modifier": -5
 				}
 			],
 			"calc": {
 				"level": 11,
-				"rsl": "DX-1"
+				"rsl": "HT-1"
 			}
 		}
 	],
@@ -4660,7 +4660,7 @@
 		{
 			"id": "79b99011-f224-42b2-aabf-d7940164cdb1",
 			"type": "note",
-			"text": "Role\n\nKalkin is decent in a fight, see tactics above. He has a reasonable set of utility spells and basic healing. His Communication and Empathy spells are darn good. He is the guy you want to get information from your targets, he can do it without anyone even knowing. He also is the guy to communicate back to home base or your employer. His teleportation mean he can also travel fast but solo, his ST is low enough that he can only carry 96lbs via teleport in addition to himself. Apportation, levitate, flight, etc mean he can get up high when he wants to or can get you up high.\n\nLightning is a darn good offensive spell too. It treats all metal armor as DR1 so knights, heavy fighters are not happy. It can stuns if an opponent takes HP damage, which is good, that puts the action economy on your side."
+			"text": "Role\n\nKalkin is decent in a fight, see tactics below. He has a reasonable set of utility spells and basic healing. His Communication and Empathy spells are darn good. He is the guy you want to get information from your targets, he can do it without anyone even knowing. He also is the guy to communicate back to home base or your employer. His teleportation mean he can also travel fast but solo, his ST is low enough that he can only carry 96lbs via teleport in addition to himself. Apportation, levitate, flight, etc mean he can get up high when he wants to or can get you up high.\n\nLightning is a darn good offensive spell too. It treats all metal armor as DR1 so knights, heavy fighters are not happy. It can stuns if an opponent takes HP damage, which is good, that puts the action economy on your side."
 		},
 		{
 			"id": "1b60c93a-ae02-4f56-8ac8-cc52cf58b207",
