@@ -1,0 +1,74 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "ba246270-ba56-4ae4-ab1c-67b5ba37bbe3",
+	"skills": [
+		{
+			"id": "2f22f91c-8613-4ad0-9420-4bbe9a44e2f9",
+			"type": "skill",
+			"name": "Throwing",
+			"reference": "B226",
+			"tags": [
+				"Athletic",
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Dropping",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "1d74f453-dd2a-45be-a951-8048ccecaa52",
+			"type": "skill",
+			"name": "Wrestling",
+			"reference": "B228,MA61",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 1
+		},
+		{
+			"id": "b6ceb552-7b02-4211-90fc-d3cdea7a5def",
+			"type": "skill",
+			"name": "Brawling",
+			"reference": "B182,MA55",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,397 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "3cb33bf7-f1db-4af8-af75-e8fd8258300f",
+	"skills": [
+		{
+			"id": "596b10a7-06a7-4f74-a5d4-8f9a40f86bad",
+			"type": "skill",
+			"name": "Carousing",
+			"reference": "B183",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Street"
+			],
+			"difficulty": "ht/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "10c57ba3-ee1f-4a71-a68c-b1e7c04680c6",
+			"type": "skill",
+			"name": "Climbing",
+			"reference": "B183",
+			"tags": [
+				"Athletic",
+				"Criminal",
+				"Exploration",
+				"Outdoor",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"points": 1,
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "dc1d2ee2-d1e0-47a6-8cc9-266ddf6eac2d",
+			"type": "skill",
+			"name": "Diplomacy",
+			"reference": "B187",
+			"tags": [
+				"Business",
+				"Police",
+				"Social"
+			],
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Politics",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "6e420027-41a6-4a52-bf9c-e607ae80ea26",
+			"type": "skill",
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "3e3568e4-07e7-49e0-9c82-8f5d943668cc",
+			"type": "skill",
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"tech_level": "",
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "d3a5cbae-737f-466d-8068-fa2c64cd7efb",
+			"type": "skill",
+			"name": "Forced Entry",
+			"reference": "B196",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/e",
+			"points": 1
+		},
+		{
+			"id": "5a058c33-5275-4d54-b01d-8567bffee67c",
+			"type": "skill",
+			"name": "Detect Lies",
+			"reference": "B187",
+			"tags": [
+				"Police",
+				"Social",
+				"Spy"
+			],
+			"difficulty": "per/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Body Language",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "fd58ea65-98f2-401d-9b7e-42ae16237688",
+			"type": "skill",
+			"name": "Gesture",
+			"reference": "B198",
+			"tags": [
+				"Social"
+			],
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "ece18fe7-f872-49ae-bce5-acd2bbc06854",
+			"type": "skill",
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "051443dc-21db-4095-a9ce-4a4e99e159d6",
+			"type": "skill",
+			"name": "Interrogation",
+			"reference": "B202",
+			"tags": [
+				"Military",
+				"Police",
+				"Spy"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Intimidation",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "b39a5dd0-8a88-4c3f-aeb6-6c68f3d2a18f",
+			"type": "skill",
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "459967de-384b-45ed-88da-55fa3bc76668",
+			"type": "skill",
+			"name": "Riding",
+			"reference": "B217",
+			"tags": [
+				"Animal"
+			],
+			"specialization": "Equines",
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Animal Handling",
+					"specialization": "Equines",
+					"modifier": -3
+				}
+			]
+		},
+		{
+			"id": "d447a616-6368-47df-b465-c50c46a1aea1",
+			"type": "skill",
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "@Social group@",
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Games",
+					"modifier": -3
+				}
+			]
+		},
+		{
+			"id": "a2f465d1-fe47-4fca-bef2-2e24a8c0936b",
+			"type": "skill",
+			"name": "Scrounging",
+			"reference": "B218",
+			"tags": [
+				"Criminal",
+				"Street"
+			],
+			"difficulty": "per/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "2338c438-dc5b-4254-8c90-4b249686dcaf",
+			"type": "skill",
+			"name": "Search",
+			"reference": "B219",
+			"tags": [
+				"Police",
+				"Spy"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Criminology",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "2eb3dd16-15c9-49d0-afad-f9335b9f8354",
+			"type": "skill",
+			"name": "Stealth",
+			"reference": "B222",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"points": 1,
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "d96f1027-7df1-44d9-98d3-665cbc4e3c6d",
+			"type": "skill",
+			"name": "Streetwise",
+			"reference": "B223",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Social",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			]
+		}
+	]
+}

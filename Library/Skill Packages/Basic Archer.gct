@@ -1,0 +1,67 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "9d063c2d-ae5a-47a1-b833-d55c24198fb7",
+	"skills": [
+		{
+			"id": "0e150e16-4f4e-408d-ac62-ec00bf562b2a",
+			"type": "skill",
+			"name": "Bow",
+			"reference": "B182",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "e8041634-98a5-4604-bd9a-579159d9809e",
+			"type": "skill",
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Arrow",
+			"difficulty": "dx/e",
+			"points": 1
+		},
+		{
+			"id": "30246aa9-ca2f-4e3f-8310-65babe4a7fb8",
+			"type": "skill",
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Missile Weapons",
+			"tech_level": "",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Missile Weapons",
+					"modifier": -4
+				}
+			]
+		}
+	]
+}

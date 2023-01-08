@@ -333,355 +333,208 @@
 	],
 	"skills": [
 		{
-			"id": "2dbe708f-aa32-4a5b-b407-9f661d77a8ab",
-			"type": "skill_container",
-			"open": true,
-			"children": [
+			"id": "b519f6bd-2758-4bfd-a5bf-5188d4fb917f",
+			"type": "skill",
+			"name": "Thaumatology",
+			"reference": "B225",
+			"tags": [
+				"Magical",
+				"Occult"
+			],
+			"difficulty": "iq/vh",
+			"points": 1,
+			"defaults": [
 				{
-					"id": "5332ed31-45f7-437f-8848-ea03adfe2bb9",
-					"type": "skill_container",
-					"open": true,
-					"children": [
-						{
-							"id": "b519f6bd-2758-4bfd-a5bf-5188d4fb917f",
-							"type": "skill",
-							"name": "Thaumatology",
-							"reference": "B225",
-							"tags": [
-								"Magical",
-								"Occult"
-							],
-							"difficulty": "iq/vh",
-							"points": 1,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -7
-								}
-							]
-						}
-					],
-					"name": "1. Primary Skill"
+					"type": "iq",
+					"modifier": -7
+				}
+			]
+		},
+		{
+			"id": "dcdd2d4e-67cf-4a27-95e5-5023c9b37a23",
+			"type": "skill",
+			"name": "Occultism",
+			"reference": "B212",
+			"tags": [
+				"Magical",
+				"Occult"
+			],
+			"difficulty": "iq/a",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "6c2a3f26-efd2-405f-8476-ca00f6979df3",
+			"type": "skill",
+			"name": "Research",
+			"reference": "B217",
+			"tags": [
+				"Scholarly",
+				"Spy"
+			],
+			"tech_level": "",
+			"difficulty": "iq/a",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
 				},
 				{
-					"id": "76034b14-4b21-4191-9368-e4ec43cf7561",
-					"type": "skill_container",
-					"open": true,
-					"children": [
-						{
-							"id": "2b606cfe-111f-4b7b-98a9-c331b0d84769",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "bfc47479-814c-413a-aef4-9cfb593323f2",
-									"type": "skill",
-									"name": "Innate Attack",
-									"reference": "B201",
-									"tags": [
-										"Combat",
-										"Ranged Combat",
-										"Weapon"
-									],
-									"specialization": "Beam",
-									"difficulty": "dx/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Innate Attack",
-											"modifier": -2
-										}
-									]
-								},
-								{
-									"id": "d8d7907f-04b0-4d60-b0f3-4aa028da0991",
-									"type": "skill",
-									"name": "Innate Attack",
-									"reference": "B201",
-									"tags": [
-										"Combat",
-										"Ranged Combat",
-										"Weapon"
-									],
-									"specialization": "Projectile",
-									"difficulty": "dx/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Innate Attack",
-											"modifier": -2
-										}
-									]
-								},
-								{
-									"id": "f5cf7d31-5dc3-4cf3-8cf8-f84c6fd12a18",
-									"type": "skill",
-									"name": "Staff",
-									"reference": "B208",
-									"tags": [
-										"Combat",
-										"Melee Combat",
-										"Weapon"
-									],
-									"difficulty": "dx/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Polearm",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Spear",
-											"modifier": -2
-										}
-									]
-								}
-							],
-							"name": "One of:"
-						},
-						{
-							"id": "d900422e-ac78-4e05-b43f-23741b801356",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "9175daa8-50c6-40b3-8b87-8c3d06848311",
-									"type": "skill",
-									"name": "Hiking",
-									"reference": "B200",
-									"tags": [
-										"Athletic",
-										"Exploration",
-										"Outdoor"
-									],
-									"difficulty": "ht/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "ht",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "f7754ab5-d1b5-474d-a3a9-05ac27760c3f",
-									"type": "skill",
-									"name": "Riding",
-									"reference": "B217",
-									"tags": [
-										"Animal"
-									],
-									"difficulty": "dx/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Animal Handling",
-											"modifier": -3
-										}
-									]
-								}
-							],
-							"name": "One of:"
-						}
-					],
-					"name": "2. Secondary Skill"
-				},
-				{
-					"id": "9c2084e0-9fb7-4e84-9220-6b7260e4a1d5",
-					"type": "skill_container",
-					"open": true,
-					"children": [
-						{
-							"id": "0bc3f08a-0e4f-4dc8-b6d1-c6723bfac96c",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "dcdd2d4e-67cf-4a27-95e5-5023c9b37a23",
-									"type": "skill",
-									"name": "Occultism",
-									"reference": "B212",
-									"tags": [
-										"Magical",
-										"Occult"
-									],
-									"difficulty": "iq/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "6c2a3f26-efd2-405f-8476-ca00f6979df3",
-									"type": "skill",
-									"name": "Research",
-									"reference": "B217",
-									"tags": [
-										"Scholarly",
-										"Spy"
-									],
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Writing",
-											"modifier": -3
-										}
-									],
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "prereq_list",
-												"all": true,
-												"when_tl": {
-													"compare": "at_least",
-													"qualifier": 8
-												},
-												"prereqs": [
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "Computer Operation"
-														}
-													}
-												]
-											},
-											{
-												"type": "prereq_list",
-												"all": false,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Native"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Accented)"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Broken)"
-														}
-													}
-												]
-											}
-										]
-									}
-								},
-								{
-									"id": "b2cc7902-cede-49e6-b0ae-4fdbbe41ad77",
-									"type": "skill",
-									"name": "Naturalist",
-									"reference": "B211",
-									"tags": [
-										"Animal",
-										"Exploration",
-										"Natural Science",
-										"Outdoor",
-										"Plant"
-									],
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Biology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "dcc945ae-9b3e-4726-b576-798a087c9d2c",
-									"type": "skill",
-									"name": "Theology",
-									"reference": "B226",
-									"tags": [
-										"Humanities",
-										"Social Sciences"
-									],
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Religious Ritual",
-											"modifier": -4
-										}
-									]
-								}
-							],
-							"name": "One of:"
-						}
-					],
-					"name": "3. Background Skill"
+					"type": "skill",
+					"name": "Writing",
+					"modifier": -3
 				}
 			],
-			"name": "Wizard"
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": true,
+						"when_tl": {
+							"compare": "at_least",
+							"qualifier": 8
+						},
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Computer Operation"
+								}
+							}
+						]
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Native"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Accented)"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Broken)"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "b2cc7902-cede-49e6-b0ae-4fdbbe41ad77",
+			"type": "skill",
+			"name": "Naturalist",
+			"reference": "B211",
+			"tags": [
+				"Animal",
+				"Exploration",
+				"Natural Science",
+				"Outdoor",
+				"Plant"
+			],
+			"difficulty": "iq/h",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Biology",
+					"modifier": -3
+				}
+			]
+		},
+		{
+			"id": "dcc945ae-9b3e-4726-b576-798a087c9d2c",
+			"type": "skill",
+			"name": "Theology",
+			"reference": "B226",
+			"tags": [
+				"Humanities",
+				"Social Sciences"
+			],
+			"difficulty": "iq/h",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Religious Ritual",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "f5cf7d31-5dc3-4cf3-8cf8-f84c6fd12a18",
+			"type": "skill",
+			"name": "Staff",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Polearm",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Spear",
+					"modifier": -2
+				}
+			]
 		}
 	],
 	"spells": [
