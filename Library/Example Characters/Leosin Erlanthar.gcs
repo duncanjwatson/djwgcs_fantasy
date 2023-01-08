@@ -686,7 +686,6 @@
 		{
 			"id": "1d726a24-230f-416a-9cef-5dff49310d44",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "c42ddc49-5358-442c-8c9c-a80e347c8be3",
@@ -1638,30 +1637,6 @@
 					}
 				},
 				{
-					"id": "6cec0b9c-c531-4835-91de-2e05f28be7c5",
-					"type": "technique",
-					"name": "Flying Jump Kick",
-					"reference": "MA83",
-					"tags": [
-						"Cinematic Techniques",
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "h",
-					"points": 2,
-					"default": {
-						"type": "skill",
-						"name": "Karate",
-						"modifier": -7
-					},
-					"limit": 0,
-					"calc": {
-						"level": 10,
-						"rsl": "-6"
-					}
-				},
-				{
 					"id": "865a5272-7eeb-405d-aeff-751a030ef761",
 					"type": "skill",
 					"name": "Power Blow",
@@ -1696,6 +1671,30 @@
 					"calc": {
 						"level": 10,
 						"rsl": "Will+0"
+					}
+				},
+				{
+					"id": "6cec0b9c-c531-4835-91de-2e05f28be7c5",
+					"type": "technique",
+					"name": "Flying Jump Kick",
+					"reference": "MA83",
+					"tags": [
+						"Cinematic Techniques",
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "h",
+					"points": 2,
+					"default": {
+						"type": "skill",
+						"name": "Karate",
+						"modifier": -7
+					},
+					"limit": 0,
+					"calc": {
+						"level": 10,
+						"rsl": "-6"
 					}
 				}
 			],
@@ -1740,24 +1739,6 @@
 			}
 		},
 		{
-			"id": "17ed07a2-08e1-489e-b699-cfb90d5bbd96",
-			"type": "skill",
-			"name": "Forced Entry",
-			"reference": "B196",
-			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "dx/e",
-			"points": 1,
-			"calc": {
-				"level": 15,
-				"rsl": "DX+0"
-			}
-		},
-		{
 			"id": "0c511e6b-651d-4f34-8114-413fbd60df0d",
 			"type": "skill",
 			"name": "Stealth",
@@ -1788,6 +1769,24 @@
 					"modifier": -5
 				}
 			],
+			"calc": {
+				"level": 15,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "17ed07a2-08e1-489e-b699-cfb90d5bbd96",
+			"type": "skill",
+			"name": "Forced Entry",
+			"reference": "B196",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
 			"calc": {
 				"level": 15,
 				"rsl": "DX+0"
@@ -1948,6 +1947,113 @@
 			"calc": {
 				"level": 12,
 				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "ddcda264-28a0-4906-bf91-c889f4afe6e9",
+			"type": "skill",
+			"name": "Urban Survival",
+			"reference": "B228",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "55f9097c-009f-459c-9553-69f967d8dc0a",
+			"type": "skill",
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Mountain",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Woodlands",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
 			}
 		},
 		{
@@ -2166,162 +2272,6 @@
 				"level": 10,
 				"rsl": "Per-2"
 			}
-		},
-		{
-			"id": "55f9097c-009f-459c-9553-69f967d8dc0a",
-			"type": "skill",
-			"name": "Survival",
-			"reference": "B223",
-			"tags": [
-				"Exploration",
-				"Outdoor"
-			],
-			"specialization": "Mountain",
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Survival",
-				"specialization": "Woodlands",
-				"modifier": -3,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Naturalist",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Woodlands",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "ba5a2e62-3a79-4b8c-961e-f2184cd8af6c",
-			"type": "skill",
-			"name": "Survival",
-			"reference": "B223",
-			"tags": [
-				"Exploration",
-				"Outdoor"
-			],
-			"specialization": "Woodlands",
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Naturalist",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Mountain",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
 		}
 	],
 	"notes": [
@@ -2337,7 +2287,7 @@
 		}
 	],
 	"created_date": "2023-01-08T10:31:48-08:00",
-	"modified_date": "2023-01-08T12:13:41-08:00",
+	"modified_date": "2023-01-08T12:20:09-08:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
