@@ -325,5 +325,12 @@
 				"points": 45
 			}
 		}
+	],
+	"notes": [
+		{
+			"id": "23d80898-eb61-4974-bd93-d9cb4c2aedc7",
+			"type": "note",
+			"text": "Dwarf"
+		}
 	]
 }

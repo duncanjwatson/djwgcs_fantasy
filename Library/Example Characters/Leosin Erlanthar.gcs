@@ -469,18 +469,18 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 2,
+			"adj": 3,
 			"calc": {
 				"value": 12,
-				"points": 20
+				"points": 30
 			}
 		},
 		{
 			"attr_id": "dx",
-			"adj": 5,
+			"adj": 4,
 			"calc": {
 				"value": 15,
-				"points": 100
+				"points": 80
 			}
 		},
 		{
@@ -684,6 +684,115 @@
 			}
 		},
 		{
+			"id": "1d726a24-230f-416a-9cef-5dff49310d44",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "c42ddc49-5358-442c-8c9c-a80e347c8be3",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c8b071ea-2734-4ec6-aef5-5e32bf4d4e77",
+							"type": "trait",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "7ac39526-aa56-4d1a-ad47-90484fb1cb76",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "2bd1d4b7-45a3-4cde-ab46-bfc9d8348c77",
+							"type": "trait",
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "e4bc21ed-d9bc-4f3b-89dd-a399fb22775b",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "92fbb0d0-550d-4e67-8c2b-9aad0bab4b4a",
+							"type": "trait",
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 1,
+							"can_level": true,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"name": "Racial Advantages",
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"name": "Half-Elf",
+			"calc": {
+				"points": 11
+			}
+		},
+		{
 			"id": "4210fba0-9ca5-4d82-ba45-e08ee0606c09",
 			"type": "trait",
 			"name": "High Pain Threshold",
@@ -711,34 +820,15 @@
 			}
 		},
 		{
-			"id": "cab7f58c-eee5-4919-b6db-8e474ab8ca81",
+			"id": "59fed90a-c631-4d70-84af-46bc6faff74b",
 			"type": "trait",
-			"name": "Iron Arms",
-			"reference": "MA50",
-			"notes": "May add up to 2 levels, granting up to 2 DR to arms OR Striker (manually add striker and increase cost by 4 points)",
+			"name": "Ambidexterity",
+			"reference": "B39",
 			"tags": [
-				"Cinematic",
-				"Exotic",
-				"Perk",
+				"Advantage",
 				"Physical"
 			],
-			"base_points": 1,
-			"levels": 2,
-			"points_per_level": 2,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to ST and HT to resist injury from Arm Lock, Wrench Arm and similar techniques",
-					"amount": 3
-				},
-				{
-					"type": "dr_bonus",
-					"location": "arm",
-					"amount": 1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
+			"base_points": 5,
 			"calc": {
 				"points": 5
 			}
@@ -777,15 +867,34 @@
 			}
 		},
 		{
-			"id": "59fed90a-c631-4d70-84af-46bc6faff74b",
+			"id": "cab7f58c-eee5-4919-b6db-8e474ab8ca81",
 			"type": "trait",
-			"name": "Ambidexterity",
-			"reference": "B39",
+			"name": "Iron Arms",
+			"reference": "MA50",
+			"notes": "May add up to 2 levels, granting up to 2 DR to arms OR Striker (manually add striker and increase cost by 4 points)",
 			"tags": [
-				"Advantage",
+				"Cinematic",
+				"Exotic",
+				"Perk",
 				"Physical"
 			],
-			"base_points": 5,
+			"base_points": 1,
+			"levels": 2,
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to ST and HT to resist injury from Arm Lock, Wrench Arm and similar techniques",
+					"amount": 3
+				},
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
 			"calc": {
 				"points": 5
 			}
@@ -1022,6 +1131,118 @@
 			}
 		},
 		{
+			"id": "0b43e59e-1f11-4318-8be3-dbbc5de8868f",
+			"type": "trait",
+			"name": "Likes neutral colors and unassuming clothing",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "fd3172ea-297c-4623-b426-7b0a34329f0b",
+			"type": "trait",
+			"name": "Travels as light as possible",
+			"reference": "B162",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "0c70e8c1-a8fe-4d80-b5c1-193c960dcbf7",
+			"type": "trait",
+			"name": "Cannot Float",
+			"reference": "B165",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "a0e1a469-0898-411f-b573-f81755e730af",
+			"type": "trait",
+			"name": "Congenial",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "2ad5811c-214e-4159-9db0-c7cdc06e74d5",
+			"type": "trait",
+			"name": "Humble",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "1014c069-83dc-4901-bced-3e8da92bb831",
+			"type": "trait",
+			"name": "Vow",
+			"reference": "B161",
+			"notes": "Not to wear armor",
+			"tags": [
+				"Disadvantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
+					"type": "modifier",
+					"name": "Minor",
+					"reference": "B161",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
+					"type": "modifier",
+					"name": "Major",
+					"reference": "B161",
+					"cost": -10,
+					"cost_type": "points"
+				},
+				{
+					"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
+					"type": "modifier",
+					"name": "Great",
+					"reference": "B161",
+					"cost": -15,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
 			"id": "49a684db-ac2f-4e80-b678-02a30bc05559",
 			"type": "trait",
 			"name": "Obsession",
@@ -1053,22 +1274,6 @@
 			"cr": 12,
 			"calc": {
 				"points": -10
-			}
-		},
-		{
-			"id": "10f8797d-3613-48ca-bc21-8225f8daada2",
-			"type": "trait",
-			"name": "Charitable",
-			"reference": "B125",
-			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -15,
-			"cr": 12,
-			"calc": {
-				"points": -15
 			}
 		},
 		{
@@ -1140,115 +1345,19 @@
 			}
 		},
 		{
-			"id": "1014c069-83dc-4901-bced-3e8da92bb831",
+			"id": "10f8797d-3613-48ca-bc21-8225f8daada2",
 			"type": "trait",
-			"name": "Vow",
-			"reference": "B161",
-			"notes": "Not to wear armor",
+			"name": "Charitable",
+			"reference": "B125",
+			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
 			"tags": [
 				"Disadvantage",
-				"Physical"
+				"Mental"
 			],
-			"modifiers": [
-				{
-					"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
-					"type": "modifier",
-					"name": "Minor",
-					"reference": "B161",
-					"cost": -5,
-					"cost_type": "points",
-					"disabled": true
-				},
-				{
-					"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
-					"type": "modifier",
-					"name": "Major",
-					"reference": "B161",
-					"cost": -10,
-					"cost_type": "points"
-				},
-				{
-					"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
-					"type": "modifier",
-					"name": "Great",
-					"reference": "B161",
-					"cost": -15,
-					"cost_type": "points",
-					"disabled": true
-				}
-			],
+			"base_points": -15,
+			"cr": 12,
 			"calc": {
-				"points": -10
-			}
-		},
-		{
-			"id": "0c70e8c1-a8fe-4d80-b5c1-193c960dcbf7",
-			"type": "trait",
-			"name": "Cannot Float",
-			"reference": "B165",
-			"tags": [
-				"Physical",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "2ad5811c-214e-4159-9db0-c7cdc06e74d5",
-			"type": "trait",
-			"name": "Humble",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "a0e1a469-0898-411f-b573-f81755e730af",
-			"type": "trait",
-			"name": "Congenial",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "0b43e59e-1f11-4318-8be3-dbbc5de8868f",
-			"type": "trait",
-			"name": "Likes neutral colors and unassuming clothing",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "fd3172ea-297c-4623-b426-7b0a34329f0b",
-			"type": "trait",
-			"name": "Travels as light as possible",
-			"reference": "B162",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
+				"points": -15
 			}
 		}
 	],
@@ -2019,42 +2128,6 @@
 			}
 		},
 		{
-			"id": "9230f399-0fc8-4fce-ba9d-f64f45981081",
-			"type": "skill",
-			"name": "Fast-Talk",
-			"reference": "B195",
-			"tags": [
-				"Criminal",
-				"Social",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "iq/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Acting",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 10,
-				"rsl": "IQ+0"
-			}
-		},
-		{
 			"id": "7c9d9c12-9ff6-4c99-aba0-5b9139958a7a",
 			"type": "skill",
 			"name": "Detect Lies",
@@ -2095,39 +2168,176 @@
 			}
 		},
 		{
-			"id": "c9fe6004-f13a-42e9-8d00-7210cb2105d4",
+			"id": "55f9097c-009f-459c-9553-69f967d8dc0a",
 			"type": "skill",
-			"name": "Streetwise",
+			"name": "Survival",
 			"reference": "B223",
 			"tags": [
-				"Criminal",
-				"Police",
-				"Social",
-				"Street"
+				"Exploration",
+				"Outdoor"
 			],
-			"difficulty": "iq/a",
+			"specialization": "Mountain",
+			"difficulty": "per/a",
 			"points": 1,
 			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"type": "skill",
+				"name": "Survival",
+				"specialization": "Woodlands",
+				"modifier": -3,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"defaults": [
 				{
-					"type": "iq",
+					"type": "per",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Woodlands",
+					"modifier": -3
 				}
 			],
 			"calc": {
-				"level": 9,
-				"rsl": "IQ-1"
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "ba5a2e62-3a79-4b8c-961e-f2184cd8af6c",
+			"type": "skill",
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Woodlands",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Mountain",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
 			}
 		}
 	],
+	"notes": [
+		{
+			"id": "5cf25677-7f5d-4290-b405-1e709506e911",
+			"type": "note",
+			"text": "Half-Elf"
+		},
+		{
+			"id": "a9bc89e0-5dbc-422e-b136-7323d7d051e4",
+			"type": "note",
+			"text": "Half-Elf"
+		}
+	],
 	"created_date": "2023-01-08T10:31:48-08:00",
-	"modified_date": "2023-01-08T12:04:54-08:00",
+	"modified_date": "2023-01-08T12:13:41-08:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",

@@ -433,5 +433,12 @@
 			"name": "Elf",
 			"reference": "F108"
 		}
+	],
+	"notes": [
+		{
+			"id": "5b465bf5-9ffd-47f3-b36e-4969e76b1348",
+			"type": "note",
+			"text": "Elf"
+		}
 	]
 }
