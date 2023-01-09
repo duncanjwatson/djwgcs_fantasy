@@ -299,7 +299,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 4
 						}
 					}
 				},
@@ -327,7 +327,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -341,7 +341,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -353,7 +353,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -367,7 +367,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -381,7 +381,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -395,7 +395,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -423,7 +423,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -437,7 +437,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -450,7 +450,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				}
@@ -597,67 +597,6 @@
 			"open": true,
 			"children": [
 				{
-					"id": "03ff2327-73a2-48e4-9741-0f99e59ff7b3",
-					"type": "trait_container",
-					"open": true,
-					"children": [
-						{
-							"id": "27a1fa44-409c-4b52-8b7f-d96cbed9e072",
-							"type": "trait",
-							"name": "Increased Health",
-							"reference": "B14",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"levels": 1,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "ht",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 10
-							}
-						},
-						{
-							"id": "1fedfea7-cd70-465c-bc61-ea3952eee1f0",
-							"type": "trait",
-							"name": "Increased Intelligence",
-							"reference": "B15",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Mental"
-							],
-							"levels": 3,
-							"points_per_level": 20,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "iq",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 60
-							}
-						}
-					],
-					"name": "Attributes",
-					"calc": {
-						"points": 70
-					}
-				},
-				{
 					"id": "b296f474-b73f-4d4a-bf86-adb238e3edb1",
 					"type": "trait_container",
 					"open": true,
@@ -789,6 +728,67 @@
 					}
 				},
 				{
+					"id": "03ff2327-73a2-48e4-9741-0f99e59ff7b3",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "1fedfea7-cd70-465c-bc61-ea3952eee1f0",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 3,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 60
+							}
+						},
+						{
+							"id": "27a1fa44-409c-4b52-8b7f-d96cbed9e072",
+							"type": "trait",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 70
+					}
+				},
+				{
 					"id": "f5d019e0-87f8-4cbc-ae6e-ff37c98e3d3c",
 					"type": "trait_container",
 					"open": true,
@@ -816,6 +816,32 @@
 			"name": "Wizard",
 			"calc": {
 				"points": 160
+			}
+		},
+		{
+			"id": "94af74cd-84e5-4b46-b518-c649c355fda1",
+			"type": "trait",
+			"name": "Extra Fatigue Points",
+			"reference": "B16",
+			"tags": [
+				"Advantage",
+				"Attribute",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "45214028-e559-4766-a2e7-144aa0c8e5ce",
+					"type": "modifier",
+					"name": "Magic Only",
+					"notes": "Subject to involuntary FP drain",
+					"cost": -10
+				}
+			],
+			"levels": 7,
+			"points_per_level": 3,
+			"can_level": true,
+			"calc": {
+				"points": 19
 			}
 		},
 		{
@@ -919,45 +945,196 @@
 			}
 		},
 		{
-			"id": "c30c183a-b244-46ae-bfaa-7ea7d8e0f05c",
+			"id": "7058d1f9-501b-45cf-8cc6-92ec5b340acb",
 			"type": "trait",
-			"name": "Easy to Read",
-			"reference": "B134",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -10,
-			"features": [
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
 				{
-					"type": "conditional_modifier",
-					"situation": "to others on all Empathy, Body Language, and Psychology rolls to discern your intentions or the truth of your words",
-					"amount": 4
+					"id": "604ea0ef-05d1-4c42-8244-92a72dfabe5a",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"level": 12,
+						"parry": "No",
+						"block": "No",
+						"damage": "1d-3 cr"
+					}
 				},
 				{
-					"type": "conditional_modifier",
-					"situation": "to others on IQ, Detect Lies, and Gambling rolls in any Quick Contest with your Acting, Fast-Talk, or Gambling skill when you try to lie or bluff",
-					"amount": 4
+					"id": "855ab111-0f44-4ea4-9bef-4704e4f4a67d",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"level": 12,
+						"parry": "11",
+						"damage": "1d-3 cr"
+					}
+				},
+				{
+					"id": "63221f5b-a4f7-4c19-be7f-25398441320e",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 10,
+						"parry": "No",
+						"damage": "1d-1 cr"
+					}
 				}
 			],
 			"calc": {
-				"points": -10
+				"points": 0
 			}
 		},
 		{
-			"id": "bcb1ad46-4e89-4a96-a14f-1a34211bbd78",
+			"id": "650ea127-c393-442f-ab6e-65cb542b36f2",
 			"type": "trait",
-			"name": "Post-Combat Shakes",
-			"reference": "B150",
-			"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
+			"name": "Congenial",
+			"reference": "B164",
 			"tags": [
-				"Disadvantage",
-				"Mental"
+				"Mental",
+				"Quirk"
 			],
-			"base_points": -5,
-			"cr": 12,
+			"base_points": -1,
 			"calc": {
-				"points": -5
+				"points": -1
+			}
+		},
+		{
+			"id": "4f09f7b2-4baa-4426-9e14-99f357cf7cb7",
+			"type": "trait",
+			"name": "Proud",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "to orders, insults, or social slights",
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "21886374-b865-4e08-9cd6-0150afa3f2d0",
+			"type": "trait",
+			"name": "Horrible Hangovers",
+			"reference": "B165",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "added to any penalties assessed for excessive drinking the previous evening and add 3 hours to hangover duration",
+					"amount": -3
+				}
+			],
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "41754255-9b40-4d7c-868b-0b0af009ddd1",
+			"type": "trait",
+			"name": "Imaginative",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "156d5fb9-7d3d-4d50-8d12-6459be900250",
+			"type": "trait",
+			"name": "Nosy",
+			"reference": "B164",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1029,6 +1206,48 @@
 			}
 		},
 		{
+			"id": "bcb1ad46-4e89-4a96-a14f-1a34211bbd78",
+			"type": "trait",
+			"name": "Post-Combat Shakes",
+			"reference": "B150",
+			"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "c30c183a-b244-46ae-bfaa-7ea7d8e0f05c",
+			"type": "trait",
+			"name": "Easy to Read",
+			"reference": "B134",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to others on all Empathy, Body Language, and Psychology rolls to discern your intentions or the truth of your words",
+					"amount": 4
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to others on IQ, Detect Lies, and Gambling rolls in any Quick Contest with your Acting, Fast-Talk, or Gambling skill when you try to lie or bluff",
+					"amount": 4
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
 			"id": "d1e6fd92-2924-4193-8162-4cd30632ea72",
 			"type": "trait",
 			"name": "Night Blindness",
@@ -1080,367 +1299,150 @@
 			"calc": {
 				"points": -15
 			}
-		},
-		{
-			"id": "4f09f7b2-4baa-4426-9e14-99f357cf7cb7",
-			"type": "trait",
-			"name": "Proud",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"features": [
-				{
-					"type": "reaction_bonus",
-					"situation": "to orders, insults, or social slights",
-					"amount": -1
-				}
-			],
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "a604a528-9183-408f-80bf-484d78a2e849",
-			"type": "trait",
-			"name": "Sexless",
-			"reference": "B165",
-			"tags": [
-				"Physical",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "21886374-b865-4e08-9cd6-0150afa3f2d0",
-			"type": "trait",
-			"name": "Horrible Hangovers",
-			"reference": "B165",
-			"tags": [
-				"Physical",
-				"Quirk"
-			],
-			"base_points": -1,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "added to any penalties assessed for excessive drinking the previous evening and add 3 hours to hangover duration",
-					"amount": -3
-				}
-			],
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "41754255-9b40-4d7c-868b-0b0af009ddd1",
-			"type": "trait",
-			"name": "Imaginative",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "156d5fb9-7d3d-4d50-8d12-6459be900250",
-			"type": "trait",
-			"name": "Nosy",
-			"reference": "B164",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "94af74cd-84e5-4b46-b518-c649c355fda1",
-			"type": "trait",
-			"name": "Extra Fatigue Points",
-			"reference": "B16",
-			"tags": [
-				"Advantage",
-				"Attribute",
-				"Physical"
-			],
-			"modifiers": [
-				{
-					"id": "45214028-e559-4766-a2e7-144aa0c8e5ce",
-					"type": "modifier",
-					"name": "Magic Only",
-					"notes": "Subject to involuntary FP drain",
-					"cost": -10
-				}
-			],
-			"levels": 7,
-			"points_per_level": 3,
-			"can_level": true,
-			"calc": {
-				"points": 19
-			}
-		},
-		{
-			"id": "7058d1f9-501b-45cf-8cc6-92ec5b340acb",
-			"type": "trait",
-			"name": "Natural Attacks",
-			"reference": "B271",
-			"weapons": [
-				{
-					"id": "604ea0ef-05d1-4c42-8244-92a72dfabe5a",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Bite",
-					"reach": "C",
-					"parry": "No",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						}
-					],
-					"calc": {
-						"level": 12,
-						"parry": "No",
-						"block": "No",
-						"damage": "1d-3 cr"
-					}
-				},
-				{
-					"id": "855ab111-0f44-4ea4-9bef-4704e4f4a67d",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Punch",
-					"reach": "C",
-					"parry": "0",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Boxing"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						},
-						{
-							"type": "skill",
-							"name": "Karate"
-						}
-					],
-					"calc": {
-						"level": 12,
-						"parry": "9",
-						"damage": "1d-3 cr"
-					}
-				},
-				{
-					"id": "63221f5b-a4f7-4c19-be7f-25398441320e",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"usage": "Kick",
-					"reach": "C,1",
-					"parry": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Brawling",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Kicking"
-						},
-						{
-							"type": "skill",
-							"name": "Karate",
-							"modifier": -2
-						}
-					],
-					"calc": {
-						"level": 10,
-						"parry": "No",
-						"damage": "1d-2 cr"
-					}
-				}
-			],
-			"calc": {
-				"points": 0
-			}
 		}
 	],
 	"skills": [
 		{
-			"id": "976bfc58-c091-4b0e-ab44-222bd0fe3b42",
+			"id": "7083be1c-5d78-4f90-9e66-8911e54b2366",
 			"type": "skill",
-			"name": "Carousing",
-			"reference": "B183",
+			"name": "Thaumatology",
+			"reference": "B225",
 			"tags": [
-				"Criminal",
-				"Social",
-				"Street"
+				"Magical",
+				"Occult"
 			],
-			"difficulty": "ht/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "HT+0"
-			}
-		},
-		{
-			"id": "8e03545f-8f92-4ce5-858d-b84a236c8aff",
-			"type": "skill",
-			"name": "Detect Lies",
-			"reference": "B187",
-			"tags": [
-				"Police",
-				"Social",
-				"Spy"
-			],
-			"difficulty": "per/h",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -6,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Body Language",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Psychology",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per-2"
-			}
-		},
-		{
-			"id": "5f8e1a69-ed14-4633-9b36-b05bfc3123be",
-			"type": "skill",
-			"name": "Diplomacy",
-			"reference": "B187",
-			"tags": [
-				"Business",
-				"Police",
-				"Social"
-			],
-			"difficulty": "iq/h",
+			"difficulty": "iq/vh",
 			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
-				"modifier": -6,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"modifier": -7,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
 			},
 			"defaults": [
 				{
 					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Politics",
-					"modifier": -6
+					"modifier": -7
 				}
 			],
 			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
+				"level": 19,
+				"rsl": "IQ+6"
 			}
 		},
 		{
-			"id": "a7b25696-714f-4754-b4d0-97a788af85cf",
+			"id": "f2e10fe2-9db2-419c-8751-26be8d262369",
 			"type": "skill",
-			"name": "Fast-Talk",
-			"reference": "B195",
+			"name": "Innate Attack",
+			"reference": "B201",
 			"tags": [
-				"Criminal",
-				"Social",
-				"Spy",
-				"Street"
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
 			],
-			"difficulty": "iq/a",
-			"points": 1,
+			"specialization": "Projectile",
+			"difficulty": "dx/e",
+			"points": 6,
 			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
+				"type": "skill",
+				"name": "Innate Attack",
+				"specialization": "Beam",
+				"modifier": -2,
+				"level": 13,
+				"adjusted_level": 13,
+				"points": 2
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Innate Attack",
+					"modifier": -2
+				}
+			],
+			"calc": {
+				"level": 15,
+				"rsl": "DX+3"
+			}
+		},
+		{
+			"id": "30871fb8-9cde-4455-9035-8a5e26797c90",
+			"type": "skill",
+			"name": "Innate Attack",
+			"reference": "B201",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Beam",
+			"difficulty": "dx/e",
+			"points": 8,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
 				"level": 8,
 				"adjusted_level": 8,
 				"points": -8
 			},
 			"defaults": [
 				{
-					"type": "iq",
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Innate Attack",
+					"modifier": -2
+				}
+			],
+			"calc": {
+				"level": 15,
+				"rsl": "DX+3"
+			}
+		},
+		{
+			"id": "4bd48cd7-5a4b-4f0d-a213-b5e637c7ddd3",
+			"type": "skill",
+			"name": "Staff",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"points": 4,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "dx",
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
-					"modifier": -5
+					"name": "Polearm",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Spear",
+					"modifier": -2
 				}
 			],
 			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
+				"level": 13,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -1484,101 +1486,6 @@
 			"calc": {
 				"level": 13,
 				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "c5c2a8df-533f-4bd2-9f43-8d9cbdb91ff8",
-			"type": "skill",
-			"name": "Gesture",
-			"reference": "B198",
-			"tags": [
-				"Social"
-			],
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				}
-			],
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "74fcb7b6-2729-40c1-b3ed-76fb0d5b5408",
-			"type": "skill",
-			"name": "Hiking",
-			"reference": "B200",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 10,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "4acf2db6-b986-475a-aa86-15d6c9537089",
-			"type": "skill",
-			"name": "Observation",
-			"reference": "B211",
-			"tags": [
-				"Criminal",
-				"Military",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Shadowing",
-					"modifier": -5
-				}
-			],
-			"calc": {
-				"level": 12,
-				"rsl": "Per-1"
 			}
 		},
 		{
@@ -1712,38 +1619,31 @@
 			}
 		},
 		{
-			"id": "27e2affe-76bb-4723-b8e9-30cea13180fd",
+			"id": "c5c2a8df-533f-4bd2-9f43-8d9cbdb91ff8",
 			"type": "skill",
-			"name": "Riding",
-			"reference": "B217",
+			"name": "Gesture",
+			"reference": "B198",
 			"tags": [
-				"Animal"
+				"Social"
 			],
-			"specialization": "Equines",
-			"difficulty": "dx/a",
+			"difficulty": "iq/e",
 			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"type": "iq",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"defaults": [
 				{
-					"type": "dx",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Animal Handling",
-					"specialization": "Equines",
-					"modifier": -3
+					"type": "iq",
+					"modifier": -4
 				}
 			],
 			"calc": {
-				"level": 11,
-				"rsl": "DX-1"
+				"level": 13,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -1782,17 +1682,89 @@
 			}
 		},
 		{
-			"id": "4bd48cd7-5a4b-4f0d-a213-b5e637c7ddd3",
+			"id": "a7b25696-714f-4754-b4d0-97a788af85cf",
 			"type": "skill",
-			"name": "Staff",
-			"reference": "B208",
+			"name": "Fast-Talk",
+			"reference": "B195",
 			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
 			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "4acf2db6-b986-475a-aa86-15d6c9537089",
+			"type": "skill",
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 12,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "27e2affe-76bb-4723-b8e9-30cea13180fd",
+			"type": "skill",
+			"name": "Riding",
+			"reference": "B217",
+			"tags": [
+				"Animal"
+			],
+			"specialization": "Equines",
 			"difficulty": "dx/a",
-			"points": 4,
+			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -1807,18 +1779,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Polearm",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Spear",
-					"modifier": -2
+					"name": "Animal Handling",
+					"specialization": "Equines",
+					"modifier": -3
 				}
 			],
 			"calc": {
-				"level": 13,
-				"rsl": "DX+1"
+				"level": 11,
+				"rsl": "DX-1"
 			}
 		},
 		{
@@ -1858,106 +1826,138 @@
 			}
 		},
 		{
-			"id": "7083be1c-5d78-4f90-9e66-8911e54b2366",
+			"id": "5f8e1a69-ed14-4633-9b36-b05bfc3123be",
 			"type": "skill",
-			"name": "Thaumatology",
-			"reference": "B225",
+			"name": "Diplomacy",
+			"reference": "B187",
 			"tags": [
-				"Magical",
-				"Occult"
+				"Business",
+				"Police",
+				"Social"
 			],
-			"difficulty": "iq/vh",
+			"difficulty": "iq/h",
 			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
-				"modifier": -7,
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Politics",
+					"modifier": -6
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "8e03545f-8f92-4ce5-858d-b84a236c8aff",
+			"type": "skill",
+			"name": "Detect Lies",
+			"reference": "B187",
+			"tags": [
+				"Police",
+				"Social",
+				"Spy"
+			],
+			"difficulty": "per/h",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Body Language",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "Per-2"
+			}
+		},
+		{
+			"id": "976bfc58-c091-4b0e-ab44-222bd0fe3b42",
+			"type": "skill",
+			"name": "Carousing",
+			"reference": "B183",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Street"
+			],
+			"difficulty": "ht/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 11,
+				"rsl": "HT+0"
+			}
+		},
+		{
+			"id": "74fcb7b6-2729-40c1-b3ed-76fb0d5b5408",
+			"type": "skill",
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
 				"level": 6,
 				"adjusted_level": 6,
 				"points": -6
 			},
 			"defaults": [
 				{
-					"type": "iq",
-					"modifier": -7
+					"type": "ht",
+					"modifier": -5
 				}
 			],
 			"calc": {
-				"level": 19,
-				"rsl": "IQ+6"
-			}
-		},
-		{
-			"id": "f2e10fe2-9db2-419c-8751-26be8d262369",
-			"type": "skill",
-			"name": "Innate Attack",
-			"reference": "B201",
-			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"specialization": "Projectile",
-			"difficulty": "dx/e",
-			"points": 6,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Innate Attack",
-				"specialization": "Beam",
-				"modifier": -2,
-				"level": 13,
-				"adjusted_level": 13,
-				"points": 2
-			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Innate Attack",
-					"modifier": -2
-				}
-			],
-			"calc": {
-				"level": 15,
-				"rsl": "DX+3"
-			}
-		},
-		{
-			"id": "30871fb8-9cde-4455-9035-8a5e26797c90",
-			"type": "skill",
-			"name": "Innate Attack",
-			"reference": "B201",
-			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"specialization": "Beam",
-			"difficulty": "dx/e",
-			"points": 8,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Innate Attack",
-					"modifier": -2
-				}
-			],
-			"calc": {
-				"level": 15,
-				"rsl": "DX+3"
+				"level": 10,
+				"rsl": "HT-1"
 			}
 		}
 	],
@@ -5017,7 +5017,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"parry": "11",
+						"parry": "13",
 						"block": "No",
 						"damage": "1d+1 cr"
 					}
@@ -5058,7 +5058,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"parry": "11",
+						"parry": "13",
 						"block": "No",
 						"damage": "1d cr"
 					}
@@ -5103,7 +5103,7 @@
 					],
 					"calc": {
 						"level": 7,
-						"parry": "6",
+						"parry": "8",
 						"block": "No",
 						"damage": "1d+1 cr"
 					}
@@ -5148,7 +5148,7 @@
 					],
 					"calc": {
 						"level": 7,
-						"parry": "6",
+						"parry": "8",
 						"block": "No",
 						"damage": "1d-1 cr"
 					}
@@ -5159,14 +5159,123 @@
 				"extended_value": 10,
 				"extended_weight": "4 lb"
 			}
+		},
+		{
+			"id": "17b861e1-2621-495e-bdd9-321dd17db01f",
+			"type": "equipment",
+			"description": "Enchanted Robes",
+			"reference": "B283",
+			"notes": "Flexible, concealable, grey with embroidered pattern",
+			"tech_level": "1",
+			"tags": [
+				"Body Armor",
+				"Clothing"
+			],
+			"quantity": 1,
+			"value": 700,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "block",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "parry",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "neck",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "skull",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "leg",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "groin",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "torso",
+					"amount": 2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "vitals",
+					"amount": 2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 700,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "8f8e9d58-9fbd-446c-87f2-659a7298d7cb",
+			"type": "equipment",
+			"description": "Boots",
+			"reference": "B284",
+			"notes": "Flexible; Concealable",
+			"tech_level": "2",
+			"tags": [
+				"Footwear"
+			],
+			"quantity": 1,
+			"value": 80,
+			"weight": "3 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "foot",
+					"amount": 2
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_name",
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Kick"
+					},
+					"amount": 1
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 80,
+				"extended_weight": "3 lb"
+			}
 		}
 	],
 	"created_date": "2023-01-07T18:03:01-08:00",
-	"modified_date": "2023-01-08T12:21:55-08:00",
+	"modified_date": "2023-01-08T18:03:57-08:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
 		"basic_lift": "16 lb",
+		"dodge_bonus": 2,
+		"parry_bonus": 2,
+		"block_bonus": 2,
 		"move": [
 			5,
 			4,
@@ -5175,11 +5284,11 @@
 			1
 		],
 		"dodge": [
+			10,
+			9,
 			8,
 			7,
-			6,
-			5,
-			4
+			6
 		]
 	}
 }

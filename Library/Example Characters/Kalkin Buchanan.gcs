@@ -723,6 +723,23 @@
 			}
 		},
 		{
+			"id": "55dec8c7-7576-422f-9671-9bc2640d10dc",
+			"type": "trait",
+			"name": "Signature Gear",
+			"reference": "B85",
+			"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
+			"tags": [
+				"Advantage",
+				"Social"
+			],
+			"levels": 2,
+			"points_per_level": 1,
+			"can_level": true,
+			"calc": {
+				"points": 2
+			}
+		},
+		{
 			"id": "75dc8148-4df4-4ac5-958c-58f53d90868b",
 			"type": "trait",
 			"name": "Natural Attacks",
@@ -832,23 +849,9 @@
 			}
 		},
 		{
-			"id": "ff70ca6d-11b8-4553-a1f5-19f161b8e3a5",
+			"id": "d6b6940b-c5b8-4ddc-8189-8aa22a44c8a7",
 			"type": "trait",
-			"name": "Likes to use Magic for everything",
-			"reference": "B162",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "ee424d39-ef7a-4521-8208-8a93243477bf",
-			"type": "trait",
-			"name": "Somewhat Arrogant",
+			"name": "Bloodthirsty when it comes to the Hand",
 			"reference": "B162",
 			"tags": [
 				"Mental",
@@ -874,20 +877,6 @@
 			}
 		},
 		{
-			"id": "d6b6940b-c5b8-4ddc-8189-8aa22a44c8a7",
-			"type": "trait",
-			"name": "Bloodthirsty when it comes to the Hand",
-			"reference": "B162",
-			"tags": [
-				"Mental",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
 			"id": "058dc798-016d-45cc-9340-02f2114dbb11",
 			"type": "trait",
 			"name": "Likes to duel with Magic",
@@ -899,6 +888,108 @@
 			"base_points": -1,
 			"calc": {
 				"points": -1
+			}
+		},
+		{
+			"id": "ee424d39-ef7a-4521-8208-8a93243477bf",
+			"type": "trait",
+			"name": "Somewhat Arrogant",
+			"reference": "B162",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "ff70ca6d-11b8-4553-a1f5-19f161b8e3a5",
+			"type": "trait",
+			"name": "Likes to use Magic for everything",
+			"reference": "B162",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "dbdd2d45-39a6-457c-bb09-35b8bfe902f8",
+			"type": "trait",
+			"name": "Vow",
+			"reference": "B161",
+			"notes": "Don't work for criminals, shitheads, or shady fucks.",
+			"tags": [
+				"Disadvantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
+					"type": "modifier",
+					"name": "Minor",
+					"reference": "B161",
+					"cost": -5,
+					"cost_type": "points"
+				},
+				{
+					"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
+					"type": "modifier",
+					"name": "Major",
+					"reference": "B161",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
+					"type": "modifier",
+					"name": "Great",
+					"reference": "B161",
+					"cost": -15,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "d4fd732f-9555-433a-ae66-67c79d4b7592",
+			"type": "trait",
+			"name": "Impulsiveness",
+			"reference": "B139",
+			"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "a9920ed2-cd57-439f-a04c-4ef327a2d021",
+			"type": "trait",
+			"name": "Charitable",
+			"reference": "B125",
+			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
 			}
 		},
 		{
@@ -1081,97 +1172,6 @@
 			],
 			"calc": {
 				"points": -20
-			}
-		},
-		{
-			"id": "dbdd2d45-39a6-457c-bb09-35b8bfe902f8",
-			"type": "trait",
-			"name": "Vow",
-			"reference": "B161",
-			"notes": "Don't work for criminals, shitheads, or shady fucks.",
-			"tags": [
-				"Disadvantage",
-				"Physical"
-			],
-			"modifiers": [
-				{
-					"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
-					"type": "modifier",
-					"name": "Minor",
-					"reference": "B161",
-					"cost": -5,
-					"cost_type": "points"
-				},
-				{
-					"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
-					"type": "modifier",
-					"name": "Major",
-					"reference": "B161",
-					"cost": -10,
-					"cost_type": "points",
-					"disabled": true
-				},
-				{
-					"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
-					"type": "modifier",
-					"name": "Great",
-					"reference": "B161",
-					"cost": -15,
-					"cost_type": "points",
-					"disabled": true
-				}
-			],
-			"calc": {
-				"points": -5
-			}
-		},
-		{
-			"id": "a9920ed2-cd57-439f-a04c-4ef327a2d021",
-			"type": "trait",
-			"name": "Charitable",
-			"reference": "B125",
-			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -15,
-			"cr": 12,
-			"calc": {
-				"points": -15
-			}
-		},
-		{
-			"id": "d4fd732f-9555-433a-ae66-67c79d4b7592",
-			"type": "trait",
-			"name": "Impulsiveness",
-			"reference": "B139",
-			"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -10,
-			"cr": 12,
-			"calc": {
-				"points": -10
-			}
-		},
-		{
-			"id": "55dec8c7-7576-422f-9671-9bc2640d10dc",
-			"type": "trait",
-			"name": "Signature Gear",
-			"reference": "B85",
-			"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
-			"tags": [
-				"Advantage",
-				"Social"
-			],
-			"levels": 2,
-			"points_per_level": 1,
-			"can_level": true,
-			"calc": {
-				"points": 2
 			}
 		}
 	],
