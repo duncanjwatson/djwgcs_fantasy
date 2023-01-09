@@ -703,6 +703,7 @@
 		{
 			"id": "86cf1581-c093-4146-b4d4-d033ed27d9da",
 			"type": "trait_container",
+			"open": true,
 			"children": [
 				{
 					"id": "c91a7ac7-ac7e-4043-8baa-89abff0049aa",

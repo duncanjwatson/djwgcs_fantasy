@@ -1021,10 +1021,54 @@
 			}
 		},
 		{
-			"id": "0b43e59e-1f11-4318-8be3-dbbc5de8868f",
+			"id": "23091363-089d-42d7-887b-475c8cf1ba2e",
 			"type": "trait",
-			"name": "Likes neutral colors and unassuming clothing",
-			"reference": "B164",
+			"name": "Lethal Strike (Stiff Fingers)",
+			"reference": "B88",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"weapons": [
+				{
+					"id": "dad06c17-065b-4e5c-a69d-0778fd8848b0",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "pi",
+						"st": "thr_leveled",
+						"base": "-2"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Karate"
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "14",
+						"block": "No",
+						"damage": "1d-1 pi"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "fd3172ea-297c-4623-b426-7b0a34329f0b",
+			"type": "trait",
+			"name": "Travels as light as possible",
+			"reference": "B162",
 			"tags": [
 				"Mental",
 				"Quirk"
@@ -1035,10 +1079,10 @@
 			}
 		},
 		{
-			"id": "fd3172ea-297c-4623-b426-7b0a34329f0b",
+			"id": "0b43e59e-1f11-4318-8be3-dbbc5de8868f",
 			"type": "trait",
-			"name": "Travels as light as possible",
-			"reference": "B162",
+			"name": "Likes neutral colors and unassuming clothing",
+			"reference": "B164",
 			"tags": [
 				"Mental",
 				"Quirk"
@@ -1167,6 +1211,22 @@
 			}
 		},
 		{
+			"id": "10f8797d-3613-48ca-bc21-8225f8daada2",
+			"type": "trait",
+			"name": "Charitable",
+			"reference": "B125",
+			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
+			"tags": [
+				"Disadvantage",
+				"Mental"
+			],
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
 			"id": "d7dfc2ed-5095-41e3-9ad1-b6f74352dff1",
 			"type": "trait",
 			"name": "Sense of Duty",
@@ -1232,66 +1292,6 @@
 			],
 			"calc": {
 				"points": -15
-			}
-		},
-		{
-			"id": "10f8797d-3613-48ca-bc21-8225f8daada2",
-			"type": "trait",
-			"name": "Charitable",
-			"reference": "B125",
-			"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
-			"tags": [
-				"Disadvantage",
-				"Mental"
-			],
-			"base_points": -15,
-			"cr": 12,
-			"calc": {
-				"points": -15
-			}
-		},
-		{
-			"id": "23091363-089d-42d7-887b-475c8cf1ba2e",
-			"type": "trait",
-			"name": "Lethal Strike (Stiff Fingers)",
-			"reference": "B88",
-			"tags": [
-				"Advantage",
-				"Exotic",
-				"Physical"
-			],
-			"weapons": [
-				{
-					"id": "dad06c17-065b-4e5c-a69d-0778fd8848b0",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "pi",
-						"st": "thr_leveled",
-						"base": "-2"
-					},
-					"usage": "Punch",
-					"reach": "C",
-					"parry": "0",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Karate"
-						},
-						{
-							"type": "dx"
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "14",
-						"block": "No",
-						"damage": "1d-1 pi"
-					}
-				}
-			],
-			"calc": {
-				"points": 0
 			}
 		}
 	],

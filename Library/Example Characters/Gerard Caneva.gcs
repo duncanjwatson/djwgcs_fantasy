@@ -2110,204 +2110,6 @@
 			}
 		},
 		{
-			"id": "e789ff3e-c58d-4186-9a52-acb2bcded437",
-			"type": "equipment",
-			"description": "Scale Leggings",
-			"reference": "B283",
-			"tech_level": "2",
-			"legality_class": "3",
-			"tags": [
-				"Limb Armor"
-			],
-			"quantity": 1,
-			"value": 250,
-			"weight": "21 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "leg",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 250,
-				"extended_weight": "21 lb"
-			}
-		},
-		{
-			"id": "c0d62d0a-08b2-4cb1-b024-9a6c4212f41f",
-			"type": "equipment",
-			"description": "Medium Shield",
-			"reference": "B287",
-			"tech_level": "1",
-			"tags": [
-				"Shield"
-			],
-			"quantity": 1,
-			"value": 60,
-			"weight": "15 lb",
-			"weapons": [
-				{
-					"id": "6e671ffc-1163-4bf0-b5c7-e2ca9868be51",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"strength": "0",
-					"usage": "Shield Bash",
-					"reach": "1",
-					"parry": "No",
-					"block": "+0",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Buckler"
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Force Shield"
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Shield"
-						}
-					],
-					"calc": {
-						"level": 18,
-						"parry": "No",
-						"block": "15",
-						"damage": "1d+1 cr"
-					}
-				}
-			],
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"attribute": "dodge",
-					"amount": 2
-				},
-				{
-					"type": "attribute_bonus",
-					"attribute": "parry",
-					"amount": 2
-				},
-				{
-					"type": "attribute_bonus",
-					"attribute": "block",
-					"amount": 2
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 60,
-				"extended_weight": "15 lb"
-			}
-		},
-		{
-			"id": "b4bb7eb6-5c50-455b-ac9f-4fab1bc60332",
-			"type": "equipment",
-			"description": "Scale Sleeves",
-			"reference": "B283",
-			"tech_level": "2",
-			"legality_class": "3",
-			"tags": [
-				"Limb Armor"
-			],
-			"quantity": 1,
-			"value": 210,
-			"weight": "14 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "arm",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 210,
-				"extended_weight": "14 lb"
-			}
-		},
-		{
-			"id": "2ec03256-aeea-40ed-864c-d2c9da38a69e",
-			"type": "equipment",
-			"description": "Pot-Helm",
-			"reference": "B284",
-			"tech_level": "3",
-			"tags": [
-				"Headgear"
-			],
-			"quantity": 1,
-			"value": 100,
-			"weight": "5 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "skull",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 100,
-				"extended_weight": "5 lb"
-			}
-		},
-		{
-			"id": "f61ba48c-2849-4b07-b0fc-80959b52ba79",
-			"type": "equipment",
-			"description": "Mail Coif",
-			"reference": "B284",
-			"notes": "Flexible",
-			"tech_level": "2",
-			"legality_class": "3",
-			"tags": [
-				"Headgear"
-			],
-			"quantity": 1,
-			"value": 55,
-			"weight": "4 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "skull",
-					"amount": 4
-				},
-				{
-					"type": "dr_bonus",
-					"location": "neck",
-					"amount": 4
-				},
-				{
-					"type": "dr_bonus",
-					"location": "skull",
-					"specialization": "crushing",
-					"amount": -2
-				},
-				{
-					"type": "dr_bonus",
-					"location": "neck",
-					"specialization": "crushing",
-					"amount": -2
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 55,
-				"extended_weight": "4 lb"
-			}
-		},
-		{
 			"id": "c95c86a3-2880-4215-8343-60daa82a6d9e",
 			"type": "equipment",
 			"description": "Broadsword",
@@ -2446,63 +2248,55 @@
 			}
 		},
 		{
-			"id": "222b4f36-682f-489d-910f-a0dba485406b",
+			"id": "e789ff3e-c58d-4186-9a52-acb2bcded437",
 			"type": "equipment",
-			"description": "Boots",
-			"reference": "B284",
-			"notes": "Flexible; Concealable",
+			"description": "Scale Leggings",
+			"reference": "B283",
 			"tech_level": "2",
+			"legality_class": "3",
 			"tags": [
-				"Footwear"
+				"Limb Armor"
 			],
 			"quantity": 1,
-			"value": 80,
-			"weight": "3 lb",
+			"value": 250,
+			"weight": "21 lb",
 			"features": [
 				{
 					"type": "dr_bonus",
-					"location": "foot",
-					"amount": 2
-				},
-				{
-					"type": "weapon_bonus",
-					"selection_type": "weapons_with_name",
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Kick"
-					},
-					"amount": 1
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 80,
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"id": "b859e339-e7d7-4298-968e-5e8070aaef2b",
-			"type": "equipment",
-			"description": "Gauntlets",
-			"reference": "B284",
-			"tech_level": "2",
-			"tags": [
-				"Gloves"
-			],
-			"quantity": 1,
-			"value": 100,
-			"weight": "2 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "hand",
+					"location": "leg",
 					"amount": 4
 				}
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 100,
-				"extended_weight": "2 lb"
+				"extended_value": 250,
+				"extended_weight": "21 lb"
+			}
+		},
+		{
+			"id": "b4bb7eb6-5c50-455b-ac9f-4fab1bc60332",
+			"type": "equipment",
+			"description": "Scale Sleeves",
+			"reference": "B283",
+			"tech_level": "2",
+			"legality_class": "3",
+			"tags": [
+				"Limb Armor"
+			],
+			"quantity": 1,
+			"value": 210,
+			"weight": "14 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"amount": 4
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 210,
+				"extended_weight": "14 lb"
 			}
 		},
 		{
@@ -2553,6 +2347,212 @@
 			"calc": {
 				"extended_value": 150,
 				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "2ec03256-aeea-40ed-864c-d2c9da38a69e",
+			"type": "equipment",
+			"description": "Pot-Helm",
+			"reference": "B284",
+			"tech_level": "3",
+			"tags": [
+				"Headgear"
+			],
+			"quantity": 1,
+			"value": 100,
+			"weight": "5 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "skull",
+					"amount": 4
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "b859e339-e7d7-4298-968e-5e8070aaef2b",
+			"type": "equipment",
+			"description": "Gauntlets",
+			"reference": "B284",
+			"tech_level": "2",
+			"tags": [
+				"Gloves"
+			],
+			"quantity": 1,
+			"value": 100,
+			"weight": "2 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "hand",
+					"amount": 4
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "2 lb"
+			}
+		},
+		{
+			"id": "222b4f36-682f-489d-910f-a0dba485406b",
+			"type": "equipment",
+			"description": "Boots",
+			"reference": "B284",
+			"notes": "Flexible; Concealable",
+			"tech_level": "2",
+			"tags": [
+				"Footwear"
+			],
+			"quantity": 1,
+			"value": 80,
+			"weight": "3 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "foot",
+					"amount": 2
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_name",
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Kick"
+					},
+					"amount": 1
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 80,
+				"extended_weight": "3 lb"
+			}
+		},
+		{
+			"id": "c0d62d0a-08b2-4cb1-b024-9a6c4212f41f",
+			"type": "equipment",
+			"description": "Medium Shield",
+			"reference": "B287",
+			"tech_level": "1",
+			"tags": [
+				"Shield"
+			],
+			"quantity": 1,
+			"value": 60,
+			"weight": "15 lb",
+			"weapons": [
+				{
+					"id": "6e671ffc-1163-4bf0-b5c7-e2ca9868be51",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"strength": "0",
+					"usage": "Shield Bash",
+					"reach": "1",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Buckler"
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Force Shield"
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Shield"
+						}
+					],
+					"calc": {
+						"level": 18,
+						"parry": "No",
+						"block": "15",
+						"damage": "1d+1 cr"
+					}
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "dodge",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "parry",
+					"amount": 2
+				},
+				{
+					"type": "attribute_bonus",
+					"attribute": "block",
+					"amount": 2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 60,
+				"extended_weight": "15 lb"
+			}
+		},
+		{
+			"id": "f61ba48c-2849-4b07-b0fc-80959b52ba79",
+			"type": "equipment",
+			"description": "Mail Coif",
+			"reference": "B284",
+			"notes": "Flexible",
+			"tech_level": "2",
+			"legality_class": "3",
+			"tags": [
+				"Headgear"
+			],
+			"quantity": 1,
+			"value": 55,
+			"weight": "4 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "skull",
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "neck",
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "skull",
+					"specialization": "crushing",
+					"amount": -2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "neck",
+					"specialization": "crushing",
+					"amount": -2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 55,
+				"extended_weight": "4 lb"
 			}
 		},
 		{
