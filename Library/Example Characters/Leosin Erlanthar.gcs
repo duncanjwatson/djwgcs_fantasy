@@ -734,7 +734,6 @@
 							"reference": "B14",
 							"tags": [
 								"Attribute",
-								"Disadvantage",
 								"Physical"
 							],
 							"levels": 1,
@@ -1022,115 +1021,6 @@
 			}
 		},
 		{
-			"id": "6031ecd8-1fd4-49a0-b1c4-c9fd6457e320",
-			"type": "trait",
-			"name": "Natural Attacks",
-			"reference": "B271",
-			"weapons": [
-				{
-					"id": "604ea0ef-05d1-4c42-8244-92a72dfabe5a",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Bite",
-					"reach": "C",
-					"parry": "No",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						}
-					],
-					"calc": {
-						"level": 15,
-						"parry": "No",
-						"block": "No",
-						"damage": "1d-2 cr"
-					}
-				},
-				{
-					"id": "855ab111-0f44-4ea4-9bef-4704e4f4a67d",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Punch",
-					"reach": "C",
-					"parry": "0",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Boxing"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						},
-						{
-							"type": "skill",
-							"name": "Karate"
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "14",
-						"damage": "1d cr"
-					}
-				},
-				{
-					"id": "63221f5b-a4f7-4c19-be7f-25398441320e",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"usage": "Kick",
-					"reach": "C,1",
-					"parry": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Brawling",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Kicking"
-						},
-						{
-							"type": "skill",
-							"name": "Karate",
-							"modifier": -2
-						}
-					],
-					"calc": {
-						"level": 14,
-						"parry": "No",
-						"damage": "1d+1 cr"
-					}
-				}
-			],
-			"calc": {
-				"points": 0
-			}
-		},
-		{
 			"id": "0b43e59e-1f11-4318-8be3-dbbc5de8868f",
 			"type": "trait",
 			"name": "Likes neutral colors and unassuming clothing",
@@ -1359,6 +1249,50 @@
 			"calc": {
 				"points": -15
 			}
+		},
+		{
+			"id": "23091363-089d-42d7-887b-475c8cf1ba2e",
+			"type": "trait",
+			"name": "Lethal Strike (Stiff Fingers)",
+			"reference": "B88",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"weapons": [
+				{
+					"id": "dad06c17-065b-4e5c-a69d-0778fd8848b0",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "pi",
+						"st": "thr_leveled",
+						"base": "-2"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Karate"
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "14",
+						"block": "No",
+						"damage": "1d-1 pi"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -1577,7 +1511,7 @@
 						"Weapon"
 					],
 					"difficulty": "h",
-					"points": 4,
+					"points": 5,
 					"default": {
 						"type": "skill",
 						"name": "Karate",
@@ -1585,8 +1519,8 @@
 					},
 					"limit": 0,
 					"calc": {
-						"level": 15,
-						"rsl": "-1"
+						"level": 16,
+						"rsl": "+0"
 					}
 				},
 				{
@@ -1625,7 +1559,7 @@
 						"Weapon"
 					],
 					"difficulty": "h",
-					"points": 8,
+					"points": 7,
 					"default": {
 						"type": "skill",
 						"name": "Karate",
@@ -2313,7 +2247,7 @@
 				"Clothing"
 			],
 			"quantity": 1,
-			"value": 900,
+			"value": 600,
 			"weight": "2 lb",
 			"features": [
 				{
@@ -2334,17 +2268,12 @@
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 900,
+				"extended_value": 600,
 				"extended_weight": "2 lb"
 			}
 		}
 	],
 	"notes": [
-		{
-			"id": "5cf25677-7f5d-4290-b405-1e709506e911",
-			"type": "note",
-			"text": "Half-Elf"
-		},
 		{
 			"id": "a9bc89e0-5dbc-422e-b136-7323d7d051e4",
 			"type": "note",
@@ -2352,7 +2281,7 @@
 		}
 	],
 	"created_date": "2023-01-08T10:31:48-08:00",
-	"modified_date": "2023-01-08T14:39:42-08:00",
+	"modified_date": "2023-01-08T18:28:41-08:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
