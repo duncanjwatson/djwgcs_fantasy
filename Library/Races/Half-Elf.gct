@@ -108,6 +108,9 @@
 				}
 			],
 			"name": "Half-Elf",
+			"reference": "F108",
+			"ancestry": "Human",
+			"container_type": "race",
 			"calc": {
 				"points": 11
 			}
