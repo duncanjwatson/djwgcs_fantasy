@@ -328,7 +328,8 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 4
+							"all": 4,
+							"crushing": -2
 						}
 					}
 				},
@@ -342,7 +343,8 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 4
+							"all": 4,
+							"crushing": -2
 						}
 					}
 				},
@@ -354,7 +356,9 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 5
+							"all": 5,
+							"crushing": -2,
+							"frontal": 5
 						}
 					}
 				},
@@ -368,7 +372,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 5
+							"all": 1
 						}
 					}
 				},
@@ -382,7 +386,8 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 4
+							"all": 4,
+							"crushing": -2
 						}
 					}
 				},
@@ -396,7 +401,8 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 4
+							"all": 4,
+							"crushing": -2
 						}
 					}
 				},
@@ -452,7 +458,9 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 5
+							"all": 5,
+							"crushing": -2,
+							"frontal": 5
 						}
 					}
 				}
@@ -2074,9 +2082,9 @@
 	],
 	"equipment": [
 		{
-			"id": "c9139700-4b7a-4748-a2fe-b1a74a17f366",
+			"id": "3192d1b9-2a5f-47fc-8be8-626840834c49",
 			"type": "equipment",
-			"description": "Steel Laminate Plate",
+			"description": "Steel Breastplate",
 			"reference": "B283",
 			"tech_level": "3",
 			"legality_class": "3",
@@ -2084,29 +2092,26 @@
 				"Body Armor"
 			],
 			"quantity": 1,
-			"value": 900,
-			"weight": "30 lb",
+			"value": 500,
+			"weight": "18 lb",
 			"features": [
 				{
 					"type": "dr_bonus",
-					"location": "groin",
-					"amount": 5
-				},
-				{
-					"type": "dr_bonus",
 					"location": "torso",
+					"specialization": "frontal",
 					"amount": 5
 				},
 				{
 					"type": "dr_bonus",
 					"location": "vitals",
+					"specialization": "frontal",
 					"amount": 5
 				}
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 900,
-				"extended_weight": "30 lb"
+				"extended_value": 500,
+				"extended_weight": "18 lb"
 			}
 		},
 		{
@@ -2248,55 +2253,46 @@
 			}
 		},
 		{
-			"id": "e789ff3e-c58d-4186-9a52-acb2bcded437",
+			"id": "31b66850-9312-4379-8aa7-ae37aa635dc6",
 			"type": "equipment",
-			"description": "Scale Leggings",
+			"description": "Mail Shirt",
 			"reference": "B283",
+			"notes": "Flexible, concealable",
 			"tech_level": "2",
-			"legality_class": "3",
 			"tags": [
-				"Limb Armor"
+				"Body Armor"
 			],
 			"quantity": 1,
-			"value": 250,
-			"weight": "21 lb",
+			"value": 150,
+			"weight": "16 lb",
 			"features": [
 				{
 					"type": "dr_bonus",
-					"location": "leg",
+					"location": "torso",
 					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "vitals",
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "torso",
+					"specialization": "crushing",
+					"amount": -2
+				},
+				{
+					"type": "dr_bonus",
+					"location": "vitals",
+					"specialization": "crushing",
+					"amount": -2
 				}
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 250,
-				"extended_weight": "21 lb"
-			}
-		},
-		{
-			"id": "b4bb7eb6-5c50-455b-ac9f-4fab1bc60332",
-			"type": "equipment",
-			"description": "Scale Sleeves",
-			"reference": "B283",
-			"tech_level": "2",
-			"legality_class": "3",
-			"tags": [
-				"Limb Armor"
-			],
-			"quantity": 1,
-			"value": 210,
-			"weight": "14 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "arm",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 210,
-				"extended_weight": "14 lb"
+				"extended_value": 150,
+				"extended_weight": "16 lb"
 			}
 		},
 		{
@@ -2556,6 +2552,42 @@
 			}
 		},
 		{
+			"id": "4a7a4309-ce8a-4619-acc0-5f9acd8063e1",
+			"type": "equipment",
+			"description": "Cloth Armor",
+			"reference": "B283",
+			"notes": "Flexible, concealable",
+			"tech_level": "1",
+			"tags": [
+				"Body Armor"
+			],
+			"quantity": 1,
+			"value": 30,
+			"weight": "6 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "groin",
+					"amount": 1
+				},
+				{
+					"type": "dr_bonus",
+					"location": "torso",
+					"amount": 1
+				},
+				{
+					"type": "dr_bonus",
+					"location": "vitals",
+					"amount": 1
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 30,
+				"extended_weight": "6 lb"
+			}
+		},
+		{
 			"id": "c5d6cbe8-d3e2-4bbc-83dc-b648a6d6ac1c",
 			"type": "equipment_container",
 			"open": true,
@@ -2617,10 +2649,76 @@
 				"extended_value": 52,
 				"extended_weight": "2.6 lb"
 			}
+		},
+		{
+			"id": "7685b1ed-c99f-4f79-8b0e-cfc171e874e0",
+			"type": "equipment",
+			"description": "Mail Leggings",
+			"reference": "B283",
+			"notes": "Flexible",
+			"tech_level": "2",
+			"legality_class": "3",
+			"tags": [
+				"Limb Armor"
+			],
+			"quantity": 1,
+			"value": 110,
+			"weight": "15 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "leg",
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "leg",
+					"specialization": "crushing",
+					"amount": -2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 110,
+				"extended_weight": "15 lb"
+			}
+		},
+		{
+			"id": "0fdd7bf2-ef1f-4676-b6d6-9e8d4f6095fa",
+			"type": "equipment",
+			"description": "Mail Sleeves",
+			"reference": "B283",
+			"notes": "Flexible",
+			"tech_level": "2",
+			"legality_class": "3",
+			"tags": [
+				"Limb Armor"
+			],
+			"quantity": 1,
+			"value": 70,
+			"weight": "9 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"location": "arm",
+					"specialization": "crushing",
+					"amount": -2
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 70,
+				"extended_weight": "9 lb"
+			}
 		}
 	],
 	"created_date": "2023-01-08T12:27:11-08:00",
-	"modified_date": "2023-01-08T16:15:56-08:00",
+	"modified_date": "2023-01-09T21:28:59-08:00",
 	"calc": {
 		"swing": "2d+2",
 		"thrust": "1d+1",
